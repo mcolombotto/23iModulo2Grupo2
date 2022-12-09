@@ -1,14 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Spray+Paint&display=swap');  
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   
+
 }
 /* color de fondo de la pàgina en general */
   .backgroundIndex{
     background: radial-gradient(circle, rgba(5,5,112,1) 7%, rgba(3,3,40,1) 96%);
+    font-family:  'Roboto', sans-serif; 
   }
-
+.logo{
+   font-family: 'Rubik Spray Paint', cursiva;
+   font-size: -webkit-xxx-large;
+}
   main{
   padding-top: 126px;
 }
+
+
