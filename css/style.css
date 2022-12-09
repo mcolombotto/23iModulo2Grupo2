@@ -20,11 +20,16 @@
    letter-spacing: 1px;
 }
 .menuItems{
-     font-family: 'Signika', sans-serif;
-      font-weight: lighter;
+    font-family: 'Signika', sans-serif;
+    font-weight: lighter;
+     letter-spacing: 1px;
 }
   main{
   padding-top: 126px;
 }
 
-
+text{
+     letter-spacing: 1px;
+         font-family: 'Signika', sans-serif;
+    font-weight: lighter;
+}
