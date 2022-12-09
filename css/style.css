@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Spray+Paint&display=swap');  
+@import url(https://fonts.googleapis.com/css2?family=Signika:wght@100;200;300;400;500;600;700&display=swap);
+
 
 *{
   margin: 0;
@@ -15,6 +17,11 @@
 .logo{
    font-family: 'Rubik Spray Paint', cursiva;
    font-size: -webkit-xxx-large;
+   letter-spacing: 1px;
+}
+.menuItems{
+     font-family: 'Signika', sans-serif;
+      font-weight: lighter;
 }
   main{
   padding-top: 126px;
