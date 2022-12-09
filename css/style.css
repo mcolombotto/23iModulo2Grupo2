@@ -1,0 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+/* color de fondo de la pàgina en general */
+  .backgroundIndex{
+    background: radial-gradient(circle, rgba(5,5,112,1) 7%, rgba(3,3,40,1) 96%);
+  }
+
+  main{
+  padding-top: 126px;
+}
