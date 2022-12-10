@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Filmax</title>
+       <!-- Iconos de https://fontawesome.com/icons/ -->
+    <script
+      src="https://kit.fontawesome.com/2e18571cb0.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
 <body class="backgroundIndex">
     <header>
@@ -26,8 +31,6 @@
             aria-controls="barranavegacion"
             aria-expanded="true"
             aria-label="Toggle navigation"
-            id="Toggle"
-            onclick="verMas()"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -49,14 +52,14 @@
               </li>
             </ul>
            
-                 <button type="button" class="btn btn-dark m-lg-2 button-child">
+                 <button type="button" class="btn btn-dark m-lg-2">
                       <a class="nav-link"  href=""
                     >Login</a
                   >
                 </button>
                 <button
                   type="button"
-                  class="btn btn-primary m-lg-2 button-child"
+                  class="btn btn-primary m-lg-2"
                   data-bs-toggle="modal"
                   data-bs-target="#modalRegistro"
                 >
@@ -74,25 +77,19 @@
         </div>
     </main>
      <!-- inicio de footer -->
-       <footer class="container-fluid bg-dark bg-gradient text-secondary">
+       <footer class="container-fluid bg-new-foorter text-secondary">
       <div class="container pt-2">
         <div class="box-footer text-sm-center">
           <div class="row my-2">
-            <div class="col-sm-12 col-md-7 col-lg-2 px-1 text-sm-center p-sm-0">
-              <div class="w-75 mx-auto">
-                <a href="/index.html">
-                  <figure>
-                    <img
-                      src="/img/logo_blog_anime.png"
-                      class="img-fluid logo"
-                      alt="Logo del blog"
-                    />
-                  </figure>
+            <div class="col-4 px-1 text-sm-center p-sm-0">
+              <div class="logo nav-item text-light">
+                <a href="/index.html " class="nav-item text-light">
+                 Filmax
                 </a>
               </div>
             </div>
 
-            <div class="col-sm-12 col-md-5 col-lg-3 px-1 text-sm-center p-sm-0">
+            <div class="col-4 text-sm-center p-sm-0">
               <ul class="list-unstyled">
                 <li class="nav-item"><h6 class="text-light">Navegación</h6></li>
                 <li class="nav-item">
@@ -103,21 +100,19 @@
                     >Inicio</a
                   >
                 </li>
-                 <li class="nav-item">
-                  <a class="nav-link link_hover" href="/pages/galeria.html"
-                    >Galeria de imagenes</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link link_hover" href="/pages/nosotros.html"
-                    >Acerca de nosotros</a
-                  >
-                </li>
-                <li class="nav-item link_hover">
+                
+                 <li class="nav-item link_hover">
                   <a class="nav-link  link_hover"  href="/pages/contacto.html"
                     >Contacto</a
                   >
+                </li>  
+                
+                <li class="nav-item">
+                  <a class="nav-link link_hover" href="/pages/nosotros.html"
+                    >Acerca de</a
+                  >
                 </li>
+                
                 <li class="nav-item">
                   <a class="nav-link link_hover" href="/pages/login.html"
                     >Login</a
@@ -126,7 +121,7 @@
               </ul>
             </div>
 
-            <div class="col-sm-12 col-md-7 col-lg-4 px-sm-3 pb-2 mt-md-3">
+            <div class="col-4 px-sm-3 pb-2 mt-md-3">
               <div>
                 <h6
                   class="text-light text-lg-center mb-3 px-md-5 ps-xs-3 px-lg-0"
@@ -170,40 +165,11 @@
               </div>
             </div>
 
-            <div
-              class="col-sm-12 col-md-5 col-lg-3 px-1 mt-md-3 mt-lg-0 text-sm-center p-sm-0"
-            >
-              <h6 class="text-light ps-lg-1">Unite</h6>
-              <div
-                class="padding-icons display-flex flex-lg-column d-md-flex flex-md-row justify-content-md-around pt-md-3 d-sm-flex flex-sm-row justify-content-sm-around py-sm-3"
-              >
-                <a target="_blank" href="https://play.google.com/store/apps">
-                  <figure>
-                    <img
-                      src="/img/badge-apple-store.svg"
-                      alt="apple-store"
-                      width="120"
-                      height="auto"
-                    />
-                  </figure>
-                </a>
-                <a target="_blank" href="https://www.apple.com/la/app-store/">
-                  <figure>
-                    <img
-                      src="/img/google-play-badge-bb.svg"
-                      alt="google-play"
-                      width="120"
-                      height="auto"
-                    />
-                  </figure>
-                </a>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
     </footer>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/navbar.js"></script>
 </body>
 </html>

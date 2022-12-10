@@ -34,9 +34,10 @@
 }
 
 
-/*         background: linear-gradient(90deg, #141619 0%, #212529 27%, #141619 63%);
- */
-/* inicio de media query del footer */
+.bg-new-foorter{
+    background: linear-gradient(90deg, #141619 0%, #212529 27%, #141619 63%)
+}
+/* inicio de media query del navbar y body */
  @media all and (max-width: 993px) {
 .bg-new{
     background: radial-gradient(circle, rgba(5,5,112,1) 7%, rgba(3,3,40,1) 96%);
@@ -44,12 +45,7 @@
 .backgroundIndex{
     background-image: url(https://p4.wallpaperbetter.com/wallpaper/970/460/972/avatar-2-2015-avatar-2-pandora-poster-wallpaper-preview.jpg);
 }
-/* .buttons-container{
 
-display: flex;
-} 
 
-.button-child{
-    flex-direction: column;
-} */
+ 
 } 
