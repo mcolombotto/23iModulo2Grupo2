@@ -13,7 +13,7 @@
 </head>
 <body class="backgroundIndex">
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-new">
         <div class="container">
           <a class="navbar-brand logo" href="/index.html">
             Filmax
@@ -26,6 +26,8 @@
             aria-controls="barranavegacion"
             aria-expanded="true"
             aria-label="Toggle navigation"
+            id="Toggle"
+            onclick="verMas()"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -33,48 +35,175 @@
             <ul
               class="navbar-nav ms-auto navbar-nav-scroll navbar-navegacion"
             >
-              <li class="nav-item btn">
+              <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
               </li>
-              <li class="nav-item btn">
+              <li class="nav-item">
                 <a class="nav-link fuente" href=""
                   >Contacto</a
                 >
               </li>
 
-              <li class="nav-item btn">
+              <li class="nav-item">
                 <a class="nav-link" href="">Acerca de</a>
               </li>
             </ul>
-            <button type="button" class="btn btn-dark m-lg-2">
-              <a class="nav-link"  href=""
-                >Login</a
-              >
-            </button>
-            <button
-              type="button"
-              class="btn btn-primary m-lg-2"
-              data-bs-toggle="modal"
-              data-bs-target="#modalRegistro"
-            >
-              Registrate
-            </button>
+           
+                 <button type="button" class="btn btn-dark m-lg-2 button-child">
+                      <a class="nav-link"  href=""
+                    >Login</a
+                  >
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-primary m-lg-2 button-child"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalRegistro"
+                >
+                  Registrate
+                </button>
+           
+           
           </div>
         </div>
       </nav>
     </header>
     <main class="container text-light">
-        <h1 class="test">Filmax</h1>
-        <P>Lorem ipsum dolor sit amet consectetur s magni dicta cumque accusantium dolorum eos aliquam, quia voluptate ratione provident! Tempore, corporis optio dolor excepturi harum consectetur perferendis itaque veritatis quisquam?
-        A natus aliquid quae eveniet maiores ratione sit dolorum. Eaque quo vero aspernatur corrupti velit. Repellendus neque voluptatem quasi soluta autem natus nemo, ducimus veritatis at perferendis vero officia iure!
-        Adipisci natus cumque debitis consequuntur consequatur commodi facere. Magnam odio enim ipsum aperiam rerum eum, reprehenderit incidunt accusantium doloremque soluta a atque id cum alias perspiciatis optio sequi eveniet error?
-        Doloribus unde tenetur, ex animi fugit quae explicabo, tempora tempore dolore distinctio omnis ipsam totam iure, eveniet ullam amet cupiditate. Sit dolor a, maiores doloribus saepe rem consectetur totam est.
-        Numquam culpa eligendi, accusantium consequatur tenetur, eos corporis voluptatum modi architecto, dolore sit ducimus sunt nulla quae ipsa dolorum placeat veniam magni libero rem fugiat tempora esse. Rem, eius tenetur.
-        Molestias delectus magni soluta esse ex dolorum error temporibus rerum totam corporis quis similique eos nesciunt dignissimos, accusantium quo tempore alias minima aliquid? Quaerat sequi molestias temporibus officia ducimus veritatis!</P>
+        <div class="container-fluid imagen-avatar">
+
+        </div>
     </main>
-    <footer>
-        
+     <!-- inicio de footer -->
+       <footer class="container-fluid bg-dark bg-gradient text-secondary">
+      <div class="container pt-2">
+        <div class="box-footer text-sm-center">
+          <div class="row my-2">
+            <div class="col-sm-12 col-md-7 col-lg-2 px-1 text-sm-center p-sm-0">
+              <div class="w-75 mx-auto">
+                <a href="/index.html">
+                  <figure>
+                    <img
+                      src="/img/logo_blog_anime.png"
+                      class="img-fluid logo"
+                      alt="Logo del blog"
+                    />
+                  </figure>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-5 col-lg-3 px-1 text-sm-center p-sm-0">
+              <ul class="list-unstyled">
+                <li class="nav-item"><h6 class="text-light">Navegación</h6></li>
+                <li class="nav-item">
+                  <a
+                    aria-current="page"
+                    class="nav-link link_hover active"
+                    href="/index.html"
+                    >Inicio</a
+                  >
+                </li>
+                 <li class="nav-item">
+                  <a class="nav-link link_hover" href="/pages/galeria.html"
+                    >Galeria de imagenes</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link_hover" href="/pages/nosotros.html"
+                    >Acerca de nosotros</a
+                  >
+                </li>
+                <li class="nav-item link_hover">
+                  <a class="nav-link  link_hover"  href="/pages/contacto.html"
+                    >Contacto</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link_hover" href="/pages/login.html"
+                    >Login</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-sm-12 col-md-7 col-lg-4 px-sm-3 pb-2 mt-md-3">
+              <div>
+                <h6
+                  class="text-light text-lg-center mb-3 px-md-5 ps-xs-3 px-lg-0"
+                >
+                  Seguinos en nuestras redes sociales
+                </h6>
+                <div
+                  class="padding-icons display-flex px-lg-0 d-flex flex-row -justify-content-lg-around justify-content-md-around justify-content-sm-around"
+                >
+                  <a
+                    href="https://discord.com/channels/@me"
+                    target="_blank"
+                    class="text-secondary btn btn-outline-primary"
+                  >
+                    <i class="fa-brands fa-discord p-1 mt-1 fs-2"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    class="text-secondary btn btn-outline-primary"
+                  >
+                    <i class="fa-brands fa-facebook p-1 mt-1 fs-2"></i> </a
+                  ><a
+                    href="https://www.twitter.com/"
+                    target="_blank"
+                    id="center-instagram"
+                    class="text-secondary btn btn-outline-primary"
+                  >
+                    <i
+                      class="justify-content-lg-center fa-brands fa-square-twitter p-1 mt-1 fs-2"
+                    ></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    class="text-secondary btn btn-outline-primary"
+                  >
+                    <i class="fa-brands fa-square-instagram p-1 mt-1 fs-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-sm-12 col-md-5 col-lg-3 px-1 mt-md-3 mt-lg-0 text-sm-center p-sm-0"
+            >
+              <h6 class="text-light ps-lg-1">Unite</h6>
+              <div
+                class="padding-icons display-flex flex-lg-column d-md-flex flex-md-row justify-content-md-around pt-md-3 d-sm-flex flex-sm-row justify-content-sm-around py-sm-3"
+              >
+                <a target="_blank" href="https://play.google.com/store/apps">
+                  <figure>
+                    <img
+                      src="/img/badge-apple-store.svg"
+                      alt="apple-store"
+                      width="120"
+                      height="auto"
+                    />
+                  </figure>
+                </a>
+                <a target="_blank" href="https://www.apple.com/la/app-store/">
+                  <figure>
+                    <img
+                      src="/img/google-play-badge-bb.svg"
+                      alt="google-play"
+                      width="120"
+                      height="auto"
+                    />
+                  </figure>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/navbar.js"></script>
 </body>
 </html>
