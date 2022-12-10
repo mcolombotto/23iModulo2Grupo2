@@ -34,8 +34,27 @@
 }
 
 
+
+/*inicio del css del footer */
+
 .bg-new-foorter{
     background: linear-gradient(90deg, #141619 0%, #212529 27%, #141619 63%)
+}
+.logo_footer{
+  filter:drop-shadow(23px 23px
+        48px #0d6efd);
+    text-decoration: none;    
+}
+
+/* hovers del footer */
+.logo_footer:hover{  
+filter: contrast(102%);
+} 
+
+.link_hover:hover{
+  font-weight: bold;
+  color: white;
+   
 }
 /* inicio de media query del navbar y body */
  @media all and (max-width: 993px) {
