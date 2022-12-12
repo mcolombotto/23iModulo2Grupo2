@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Spray+Paint&display=swap');  
+@import url(https://fonts.googleapis.com/css2?family=Signika:wght@100;200;300;400;500;600;700&display=swap);
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+
+}
+/* color de fondo de la pàgina en general */
+  .backgroundIndex{
+    background: radial-gradient(circle, rgba(5,5,112,1) 7%, rgba(3,3,40,1) 96%);
+    font-family:  'Roboto', sans-serif; 
+  }
+.logo{
+   font-family: 'Rubik Spray Paint', cursiva;
+   font-size: -webkit-xxx-large;
+   letter-spacing: 1px;
+}
+.menuItems{
+    font-family: 'Signika', sans-serif;
+    font-weight: lighter;
+     letter-spacing: 1px;
+}
+  main{
+  padding-top: 126px;
+}
+.imagen-avatar{
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/970/460/972/avatar-2-2015-avatar-2-pandora-poster-wallpaper-preview.jpg);
+    width: 100%;
+    height: 500px;
+}
+
+
+
+/*inicio del css del footer */
+
+.bg-new-foorter{
+  background: linear-gradient(90deg, #161718 3%, #1f2328 24%, #050b18 73%);
+}
+
+.logo_footer{
+  filter:drop-shadow(23px 23px
+        48px #0d6efd);
+    text-decoration: none;    
+}
+
+/* hovers del footer */
+.logo_footer:hover{  
+filter: contrast(102%);
+} 
+
+.link_hover:hover{
+  font-weight: bold;
+  color: white;
+   
+}
+/* inicio de media query del navbar y body */
+ @media all and (max-width: 993px) {
+.bg-new{
+    background: radial-gradient(circle, rgba(5,5,112,1) 7%, rgba(3,3,40,1) 96%);
+}
+.backgroundIndex{
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/970/460/972/avatar-2-2015-avatar-2-pandora-poster-wallpaper-preview.jpg);
+}
+
+} 
+
+/* inicio de media query del footer */
+ @media all and (min-width:50px) and (max-width: 576px) {
+ .box-footer{
+  width: auto;
+  margin: auto;
+  text-align: center;
+ }
+ .display-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+ }
+
+.justify-icon-footer{
+  justify-content: space-around;
+
+ } 
+ 
+} 
+
+
+ @media all and (min-width:375px) and (max-width: 765px) {
+  .padding-icons{ padding: 1em; 
+  }
+}
+
+/*
+diseño 1
+background: linear-gradient(90deg, #141619 0%, #1b1f22 27%, #0a1424 63%);
+diseño  2
+ackground: linear-gradient(90deg, #161718 3%, #1f2328 24%, #050b18 73%);
+}
+
+*/
