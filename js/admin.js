@@ -71,11 +71,11 @@ const PintarDB = () => {
         texto = ""
       }
 
-      if(element.publicado = true){
+      if(element.publicado == 's'){
         iconPublicado = '<i class="material-icons">check_circle</i>';
       }else{
         iconPublicado = ""
-        console.log("false")
+       
       }
 
       listaTitulosUI.innerHTML += `
@@ -135,10 +135,18 @@ formularioUI.addEventListener("submit", (e) => {
   let tituloUI = document.querySelector("#titulo").value;
   let categoriaUI = document.querySelector("#categorias").value;
   let descripcionUI = document.querySelector("#descripcion").value;
-  let publicadoUI = document.querySelector("#publicado").checked;
-  let imagenUI = document.querySelector("#imagen").files[0].name; ;
+  let publicadoUI = "";
+  let imagenUI = document.querySelector("#imagen").files[0].name; 
 
-  console.log(imagenUI);
+  var isChecked = document.getElementById('publicado').checked;
+    if(isChecked) {
+      publicadoUI = 's'
+    }else{
+      publicadoUI = 'n'
+    }
+
+  
+  
 
  
   CrearItem(tituloUI, categoriaUI, descripcionUI, publicadoUI, imagenUI);
