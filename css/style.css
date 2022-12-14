@@ -19,6 +19,9 @@
    font-size: -webkit-xxx-large;
    letter-spacing: 1px;
 }
+.width-logo-img{
+    width: 11%;
+}
 .menuItems{
     font-family: 'Signika', sans-serif;
     font-weight: lighter;
@@ -66,8 +69,17 @@ filter: contrast(102%);
     background-image: url(https://p4.wallpaperbetter.com/wallpaper/970/460/972/avatar-2-2015-avatar-2-pandora-poster-wallpaper-preview.jpg);
 }
 
+ .width-logo-img{
+    width: 20%;
+}
 } 
 
+@media all and (max-width: 768px) {
+
+ .width-logo-img{
+    display: none;
+}
+}  
 /* inicio de media query del footer */
  @media all and (min-width:50px) and (max-width: 576px) {
  .box-footer{
