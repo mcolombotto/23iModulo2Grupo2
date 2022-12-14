@@ -19,6 +19,9 @@
    font-size: -webkit-xxx-large;
    letter-spacing: 1px;
 }
+.width-logo-img{
+    width: 10%;
+}
 .menuItems{
     font-family: 'Signika', sans-serif;
     font-weight: lighter;
