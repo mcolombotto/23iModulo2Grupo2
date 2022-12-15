@@ -1,4 +1,4 @@
-import { campoRequerido, validarGeneral, validarEmail } from "./validaciones.js";
+import { campoRequerido, validarGeneral, validarEmail, validarContraseña } from "./validaciones.js";
 import { Cuenta } from "./registroClass";
 
 let campoNombre = document.getElementById("nombre");
