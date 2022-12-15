@@ -26,22 +26,33 @@
   </head>
   <body class="backgroundIndex">
     <header>
-      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-new">
+      <nav
+        class="navbar navbar-expand-lg fixed-top bg-black bg-opacity-25 navbar-dark bg-new"
+      >
         <div class="container">
-          <a class="navbar-brand logo" href="/index.html"> Filmax </a>
+          <a class="navbar-brand logo w-50 d-flex" href="/index.html">
+            <div class="logo">Filmax</div>
+            <figure class="width-logo-img">
+              <img
+                class="img-fluid"
+                src="/img/movie_logo_favicon.png"
+                alt="Logo del blog"
+              />
+            </figure>
+          </a>
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#barranavegacion"
-            aria-controls="barranavegacion"
+            data-bs-target="#barraNavegacion"
+            aria-controls="barraNavegacion"
             aria-expanded="true"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="navbar-collapse collapse menuItems" id="barranavegacion">
-            <ul class="navbar-nav ms-auto navbar-nav-scroll navbar-navegacion">
+          <div class="navbar-collapse collapse menuItems" id="barraNavegacion">
+            <ul class="navbar-nav navbar-nav-scroll navbar-navegacion">
               <li class="nav-item">
                 <a
                   class="nav-link active"
@@ -56,16 +67,16 @@
                 >
               </li>
 
-              <li class="nav-item">
+              <li class="nav-item w-50">
                 <a class="nav-link" href="/pages/nosotros.html">Acerca de</a>
               </li>
             </ul>
 
-            <button type="button" class="btn btn-dark m-lg-2">
+            <button type="button" class="btn btn-dark m-lg-2 m-auto">
               <a class="nav-link" href="/pages/login.html">Login</a>
             </button>
             <button type="button" class="btn btn-primary m-lg-2">
-              <a class="nav-link" href="/pages/registro.html">Registrate</a>
+              <a class="nav-link" href="/pages/registro.html">Regiístrate</a>
             </button>
           </div>
         </div>
