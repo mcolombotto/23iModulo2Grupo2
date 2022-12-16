@@ -21,7 +21,7 @@ const validarEmail = (input) => {
 };
 
 const validarContraseña = (input) => {
-  let regPass = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/;
+  let regPass = /^(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/;
   if (regPass.test(input.value)) {
     input.className = "form-control is-valid";
     return true;
@@ -32,9 +32,9 @@ const validarContraseña = (input) => {
 };
 
 const validarContraseña2 = (input) => {
-  let contraseñaRegistro = document.formRegistro.contraseñaRegistro;
-  let contraseñaRegistro2 = document.formRegistro.contraseñaRegistro2;
-  if (contraseñaRegistro === contraseñaRegistro2) {
+  let contraseñaRegistro = document.getElementById("contraseñaRegistro");
+  let contraseñaRegistro2 = document.getElementById("contraseñaRegistro2");
+  if (contraseñaRegistro.value === contraseñaRegistro2.value) {
     input.className = "form-control is-valid";
     return true;
   } else {
