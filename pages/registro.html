@@ -76,7 +76,7 @@
               <a class="nav-link" href="/pages/login.html">Login</a>
             </button>
             <button type="button" class="btn btn-primary m-lg-2">
-              <a class="nav-link" href="/pages/registro.html">Regiístrate</a>
+              <a class="nav-link" href="/pages/registro.html">Regístrate</a>
             </button>
           </div>
         </div>
@@ -88,62 +88,72 @@
           CREAR CUENTA
         </h1>
         <hr />
-        <form id="formRegistro" class="px-5 mx-5" novalidate>
+        <form id="formRegistro" class="px-5 mx-5">
           <div class="mb-5">
-            <label for="nombre" class="form-label text-secondary fw-bold fs-5 ms-1"
+            <label for="nombreRegistro" class="form-label text-secondary fw-bold fs-5 ms-1"
               >Nombre</label
             >
               <input
                 type="text"
                 class="form-control"
-                name="nombre"
-                id="nombre"
+                name="nombreRegistro"
+                id="nombreRegistro"
                 placeholder="Juan"
                 maxlength="40"
-                required
               />
           </div>
           <div class="mb-5">
-            <label for="apellido" class="form-label text-secondary fw-bold fs-5 ms-1"
+            <label for="apellidoRegistro" class="form-label text-secondary fw-bold fs-5 ms-1"
               >Apellido</label
             >
               <input
                 type="text"
                 class="form-control"
-                name="apellido"
-                id="apellido"
+                name="apellidoRegistro"
+                id="apellidoRegistro"
                 placeholder="Pérez"
                 maxlength="40"
-                required
               />
           </div>
           <div class="mb-5">
-            <label for="email" class="form-label text-secondary fw-bold fs-5 ms-1"
+            <label for="emailRegistro" class="form-label text-secondary fw-bold fs-5 ms-1"
               >Dirección de email</label
             >
               <input
                 type="email"
                 class="form-control"
-                name="email"
-                id="email"
+                name="emailRegistro"
+                id="emailRegistro"
                 placeholder="juanperez@correo.com"
                 maxlength="40"
-                required
               />
           </div>
           <div class="mb-5">
-            <label for="contraseña" class="form-label text-secondary fw-bold fs-5 ms-1"
+            <label for="contraseñaRegistro" class="form-label text-secondary fw-bold fs-5 ms-1"
               >Contraseña</label
             >
               <input
                 type="password"
                 class="form-control"
-                name="contraseña"
-                id="contraseña"
-                placeholder="Ingrese una contraseña de mínimo 8 caracteres"
+                name="contraseñaRegistro"
+                id="contraseñaRegistro"
+                placeholder="Mínimo 8 caracteres, una minúscula y una mayúscula"
                 maxlength="18"
-                required
               />
+          </div>
+          <div class="mb-5">
+            <label for="contraseñaRegistro2" class="form-label text-secondary fw-bold fs-5 ms-1"
+              >Contraseña</label
+            >
+              <input
+                type="password"
+                class="form-control"
+                name="contraseñaRegistro2"
+                id="contraseñaRegistro2"
+                placeholder="Ingrese nuevamente su contraseña"
+                maxlength="18"
+              />
+              <div id="contraseñaIncorrecta"></div>
           </div>
           <button class="btn btn-secondary fs-4 mb-4" type="submit">
             Regístrate

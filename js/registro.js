@@ -1,15 +1,16 @@
-import { campoRequerido, validarGeneral, validarEmail, validarContraseña } from "./validaciones.js";
-import { Cuenta } from "./registroClass";
+import { campoRequerido, validarGeneral, validarEmail, validarContraseña, validarContraseña2 } from "./validaciones.js";
+import { User } from "./registroClass";
 
-let campoNombre = document.getElementById("nombre");
-let campoApellido = document.getElementById("apellido");
-let campoEmail = document.getElementById("email");
-let campoContraseña = document.getElementById("contraseña");
+let campoNombre = document.getElementById("nombreRegistro");
+let campoApellido = document.getElementById("apellidoRegistro");
+let campoEmail = document.getElementById("emailRegistro");
+let campoContraseña = document.getElementById("contraseñaRegistro");
+let campoContraseña2 = document.getElementById("contraseñaRegistro2");
 let formRegistro = document.getElementById("formRegistro");
 
-let cuentaExistente = false;
+let usuarioExistente = false;
 
-let listaCuentas = JSON.parse(localStorage.getItem("arrayCuentasKey")) || [];
+let listaUsuarios = JSON.parse(localStorage.getItem("arrayUsersKey")) || [];
 
 campoNombre.addEventListener("blur", () => {
   campoRequerido(campoNombre);
@@ -20,41 +21,47 @@ campoApellido.addEventListener("blur", () => {
 });
 
 campoEmail.addEventListener("blur", () => {
-  campoRequerido(campoEmail);
+  validarEmail(campoEmail);
 });
 
 campoContraseña.addEventListener("blur", () => {
-  campoRequerido(campoContraseña);
+  validarContraseña(campoContraseña);
 });
 
-formRegistro.addEventListener("submit", guardarCuenta);
+campoContraseña2.addEventListener("blur", () => {
+  validarContraseña2(campoContraseña2);
+});
 
-function guardarCuenta(e) {
+formRegistro.addEventListener("submit", guardarUsuario);
+
+function guardarUsuario(e) {
   e.preventDefault();
   if (
     validarGeneral(
       campoNombre,
       campoApellido,
       campoEmail,
-      campoContraseña
+      campoContraseña,
+      campoContraseña2
     )
   ) {
-    if (cuentaExistente === false) {
-      crearCuenta();
+    if (usuarioExistente === false) {
+      crearUsuario();
     } else {
-      modificarCuenta();
+      modificarUsuario();
     }
   }
 }
 
-function crearCuenta() {
-  let cuentaNueva = new Cuenta(
+function crearUsuario() {
+  let usuarioNuevo = new User(
     campoNombre.value,
     campoApellido.value,
     campoEmail.value,
-    campoContraseña.value
+    campoContraseña.value,
+    campoContraseña2.value
   );
-  listaCuentas.push(cuentaNueva);
+  listaUsuarios.push(usuarioNuevo);
   limpiarFormulario();
   guardarLocalStorage();
   Swal.fire(
@@ -70,20 +77,11 @@ function limpiarFormulario() {
   campoApellido.className = "form-control";
   campoEmail.className = "form-control";
   campoContraseña.className = "form-control";
-  cuentaExistente = false;
+  campoContraseña2.className = "form-control";
+  usuarioExistente = false;
 }
 
 function guardarLocalStorage() {
-  localStorage.setItem("arrayCuentasKey", JSON.stringify(listaCuentas));
+  localStorage.setItem("arrayUsersKey", JSON.stringify(listaUsuarios));
 }
 
-function modificarCuenta() {
-  let indiceCuenta = listaCuentas.findIndex((itemCuenta) => {
-    return itemCuenta.email == campoEmail.value;
-  });
-  listaCuentas[indiceCuenta].nombre = campoNombre.value;
-  listaCuentas[indiceCuenta].apellido = campoApellido.value;
-  listaCuentas[indiceCuenta].contraseña = campoContraseña.value;
-  guardarLocalStorage();
-  limpiarFormulario();
-}
