@@ -32,7 +32,6 @@ campoContraseña2.addEventListener("blur", () => {
   validarContraseña2(campoContraseña2);
 });
 
-formRegistro.addEventListener("submit", guardarUsuario);
 
 function guardarUsuario(e) {
   e.preventDefault();
@@ -43,11 +42,11 @@ function guardarUsuario(e) {
       campoEmail,
       campoContraseña,
       campoContraseña2
-    )
-  ) {
-    if (usuarioExistente === false) {
-      crearUsuario();
-    } else {
+      )
+      ) {
+        if (usuarioExistente === false) {
+          crearUsuario();
+        } else {
       modificarUsuario();
     }
   }
@@ -60,16 +59,16 @@ function crearUsuario() {
     campoEmail.value,
     campoContraseña.value,
     campoContraseña2.value
-  );
+    );
   listaUsuarios.push(usuarioNuevo);
-  limpiarFormulario();
   guardarLocalStorage();
   Swal.fire(
     "Cuenta creada!",
     "Su cuenta ha sido creada correctamente",
     "success"
-  );
-}
+    );
+  limpiarFormulario();
+  }
 
 function limpiarFormulario() {
   formRegistro.reset();
@@ -78,10 +77,10 @@ function limpiarFormulario() {
   campoEmail.className = "form-control";
   campoContraseña.className = "form-control";
   campoContraseña2.className = "form-control";
-  usuarioExistente = false;
 }
 
 function guardarLocalStorage() {
   localStorage.setItem("arrayUsersKey", JSON.stringify(listaUsuarios));
 }
 
+formRegistro.addEventListener("submit", guardarUsuario);

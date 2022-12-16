@@ -12,6 +12,7 @@ export class User {
     this.contraseña = parametroContraseña;
     this.contraseña2 = parametroContraseña2;
   }
+  
   get mostrarNombre() {
     return this.name
   }
