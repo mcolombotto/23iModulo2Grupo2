@@ -77,11 +77,14 @@
    font-size: 200%;
   margin-left: 20px;
 }
-.letter-first::first-line{
-   text-transform: uppercase;
-}
-/* css de las imagenes  del equipo seccion nosotros*/
 
+/* css de las imagenes  del equipo seccion nosotros*/
+.width-img-yuli{
+  width: 67%;
+}
+.img-wrapper-equipo:hover .imagen-filter{
+  filter: contrast(100%);
+}
 .card-wrapper:hover .imagen-filter {
   filter: contrast(100%);
   scale: 1.1;
