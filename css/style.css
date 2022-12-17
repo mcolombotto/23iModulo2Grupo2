@@ -35,9 +35,25 @@
     width: 100%;
     height: 500px;
 }
-
-
-
+/*inicio del css de contacto */
+  .backgroundContacto{
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/315/481/104/avatar-2-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color: #050b18;
+    font-family: 'Signika', sans-serif;
+    font-weight: lighter;
+     letter-spacing: 1px;
+  }
+  .margin_x_subtitle{
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+.comunicate:hover{
+  color: #0f0288;
+  scale: 1.1;
+}
 /*inicio del css del footer */
 
 .bg-new-foorter{
@@ -65,9 +81,7 @@ filter: contrast(102%);
 .bg-new{
     background: radial-gradient(circle, rgba(5,5,112,1) 7%, rgba(3,3,40,1) 96%);
 }
-.backgroundIndex{
-    background-image: url(https://p4.wallpaperbetter.com/wallpaper/970/460/972/avatar-2-2015-avatar-2-pandora-poster-wallpaper-preview.jpg);
-}
+
 
  .width-logo-img{
     width: 20%;
@@ -80,6 +94,21 @@ filter: contrast(102%);
     display: none;
 }
 }  
+
+/* inicio del media query de contacto 
+
+ @media all and (min-width:50px) and (max-width: 992px) {
+
+  .backgroundContacto{
+    background: rgb(53,5,112);
+    background: radial-gradient(circle, rgb(17, 2, 57) 7%, rgb(3, 3, 35) 96%);
+    color:white;
+    font-family: 'Signika', sans-serif;
+    font-weight: lighter;
+     letter-spacing: 1px;
+  }
+} */
+
 /* inicio de media query del footer */
  @media all and (min-width:50px) and (max-width: 576px) {
  .box-footer{
