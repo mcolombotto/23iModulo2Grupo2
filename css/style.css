@@ -324,3 +324,52 @@ main {
 .card-img-top {
   height: 175px;
 }
+
+.containerLogin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formLogin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.formLogin input {
+  width: 100%;
+}
+
+.containerRegistro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formRegistro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center
+  width: 100%;
+}
+
+.formRegistro input {
+  width: 100%;
+}
+
+.formRegistro button {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-outline {
+  width: 80%;
+  max-width: 400px;
+}
