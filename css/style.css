@@ -40,6 +40,11 @@
       background: radial-gradient(circle, rgba(5,5,112,1) 7%, rgba(3,3,40,1) 96%);
 
 }
+.heading-title{
+  font-family: 'Rubik Spray Paint', cursiva;
+  padding-bottom: 5px;
+  font-size: x-large;
+}
   .backgroundContacto{
     background-image: url(https://p4.wallpaperbetter.com/wallpaper/315/481/104/avatar-2-wallpaper-preview.jpg);
     background-repeat: no-repeat;

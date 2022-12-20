@@ -25,11 +25,11 @@ const secretKey = '3ae885b76255f2259705f22d3579099c'
         }]
     }); 
 
-    const requestOptions = {
+     const requestOptions = JSON.stringify({
         method: 'POST',
         headers: myHeaders,
         body: data,
-    };
+    });
 
      return fetch(`https://api.mailjet.com/v3.1/send`, requestOptions)
        .then(response => response.text())
@@ -38,7 +38,7 @@ const secretKey = '3ae885b76255f2259705f22d3579099c'
 } 
 
 form.addEventListener("submit", e=>{
-   // e.preventDefault()
+    e.preventDefault()
     let warning=""
     let hasError = false
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
