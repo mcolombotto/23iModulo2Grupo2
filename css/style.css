@@ -35,9 +35,23 @@
     width: 100%;
     height: 500px;
 }
-
-
-
+/*inicio del css de el archivo 404 */
+#paginaError{
+  height: 600px;
+  position: relative;
+}
+.letter-size{
+  font-size: calc(1.625rem + 4.5vw);
+  font-family: 'Signika', sans-serif;
+}
+.text-position{
+    top: 264px;
+    left: 507px;
+}
+.picture-error{
+  object-fit: cover;
+  height: 473px;
+}
 /*inicio del css del footer */
 
 .bg-new-foorter{
