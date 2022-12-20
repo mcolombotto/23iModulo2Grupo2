@@ -10,7 +10,7 @@ const secretKey = '3ae885b76255f2259705f22d3579099c'
  function sendEmail(name, email, subject, message) {
     const myHeaders = {
         "Content-Type": "application/json",
-        'Authorization': 'Basic' + btoa(`${apiKey}:${secretKey}`),
+        'Authorization': 'Basic ' + btoa(`${apiKey}:${secretKey}`),
     };
 
     const data = JSON.stringify({
