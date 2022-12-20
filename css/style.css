@@ -33,6 +33,42 @@ main {
   padding-top: 126px;
 }
 
+.width-logo-img{
+  width: 11%;
+}
+
+main{
+padding-top: 126px;
+}
+
+/*inicio del css de el archivo 404 */
+#navbarError404{
+background: radial-gradient(circle, rgba(5,5,112,1) 7%, rgba(3,3,40,1) 96%);
+
+}
+/* #navbarError404:hover{
+} */
+#paginaError{
+height: 625px;
+position: relative;
+}
+#paginaError:hover{
+filter: contrast(4.5);
+}
+
+
+.letter-size{
+font-size: calc(1.625rem + 4.5vw);
+font-family: 'Signika', sans-serif;
+}
+.text-position{
+  top: 224px;
+  left: 507px;
+}
+.picture-error{
+object-fit: cover;
+height: 473px;
+
 .imagen-avatar {
   height: 1000px;
   width: 100%;
@@ -70,11 +106,32 @@ main {
   object-fit: cover;
   height: 473px;
 }
+
 /*inicio del css del footer */
 
-.bg-new-foorter {
-  background: linear-gradient(90deg, #161718 3%, #1f2328 24%, #050b18 73%);
+.bg-new-foorter{
+background: linear-gradient(90deg, #161718 3%, #1f2328 24%, #050b18 73%);
 }
+
+.logo_footer{
+filter:drop-shadow(23px 23px
+      48px #0d6efd);
+  text-decoration: none;    
+}
+
+/* hovers del footer */
+.logo_footer:hover{  
+filter: contrast(102%);
+} 
+
+.link_hover:hover{
+font-weight: bold;
+color: white;
+}
+
+/*inicio del css del footer */
+
+
 
 .logo_footer {
   filter: drop-shadow(23px 23px 48px #0d6efd);
@@ -174,6 +231,22 @@ main {
   }
 }
 
+@media all and (max-width: 576px) {
+  .summary {
+    display: none ;
+  }
+  .buttonsSmall {
+    display: block !important;
+    text-align: left;
+  }
+  .buttons {
+    display: none !important;
+  }
+  .summaryDetail {
+    text-align: left;
+    width: 90%!important;
+    font-size: x-small!important;
+
 @media all and (min-width: 375px) and (max-width: 765px) {
   .padding-icons {
     padding: 1em;
@@ -201,7 +274,8 @@ main {
   }
 
   .summary {
-    font-size: small;
+
+    font-size: small!important;
     width: 75% !important;
   }
 
@@ -212,7 +286,9 @@ main {
 
   .movieTitle {
     position: absolute;
-    top: 50% !important;
+
+    top: 30% !important;
+
     left: 10%;
   }
   .movie {
@@ -237,12 +313,31 @@ main {
   .contenedor {
     width: 100% !important;
   }
+
+  table {
+    display: none!important;
+  }
+  .summaryDetail {
+  
+    width: 75%!important;
+   
+
+  }
 }
 
 @media all and (min-width: 375px) and (max-width: 765px) {
   .padding-icons {
     padding: 1em;
   }
+
+  .titleMovie{
+    font-size: large!important;
+    
+  }
+  .icons{
+    display:none;
+  }
+
 }
 
 .movie {
@@ -265,7 +360,7 @@ main {
 .summary {
   text-align: left;
   width: 50%;
-  font-size: medium !important;
+  font-size: large !important;
 }
 
 .movieTitle {
@@ -324,6 +419,82 @@ main {
 .card-img-top {
   height: 175px;
 }
+
+
+.icons {
+  text-align: left;
+  font-size: large;
+}
+
+table {
+  width: 50%;
+  text-align: left;
+  font-size: large;
+}
+th {
+  text-align: left;
+  font-size: large;
+  width: 15%;
+}
+
+.brillo{
+  filter: brightness(30%);
+}
+
+/* inicio de media query del archivo 404*/
+ @media all and (min-width:620px) and (max-width: 861px) {
+.letter-size{
+  font-size: calc(1.625rem + 2.5vw);
+  font-family: 'Signika', sans-serif;
+}
+.text-position{
+    top: 118px;
+    left: 30px;
+}
+}
+
+ @media all and (min-width:400px) and (max-width: 620px) {
+.letter-size{
+  font-size: calc(1rem + 1.5vw);
+  font-family: 'Signika', sans-serif;
+}
+.text-position{
+    top: 118px;
+    left: 55px;
+}
+}
+ @media all and (min-width:50px) and (max-width: 400px) {
+.letter-size{
+  font-size: calc(1rem + 1vw);
+  font-family: 'Signika', sans-serif;
+}
+.text-position{
+    top: 118px;
+    left: 5px;
+  }
+#paginaError{
+  height: 525px;
+  position: relative;
+}
+  .picture-error{
+  object-fit: cover;
+  height: 370px;
+  width: auto;
+}
+}
+.titleMovie{
+  text-align:left;
+  
+}
+.movieTitleDetail {
+  position: absolute;
+  top: 10% !important;
+  left: 10%;
+}
+.summaryDetail {
+  text-align: left;
+  width: 50%;
+  font-size: large ;
 
 .containerLogin{
   display: flex;
