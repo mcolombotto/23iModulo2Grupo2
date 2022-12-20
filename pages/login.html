@@ -76,12 +76,13 @@
       <section class="py-3">
         <h1 class="display-4 text-center text-white">INICIO DE SESIÓN</h1>
       </section>
-      <form class="formLogin mt-5 mx-5 px-3 col-lg-6">
+      <form class="formLogin mt-5">
         <div class="form-outline mb-4">
           <input
             type="email"
             id="emailLogin"
             class="form-control"
+            name="emailLogin"
             placeholder="Ingresa tu email"
           />
           <label
@@ -95,6 +96,7 @@
             type="password"
             id="contraseñaLogin"
             class="form-control"
+            name="contraseñaLogin"
             placeholder="Ingresa tu contraseña"
           />
           <label
@@ -103,18 +105,21 @@
             >Contraseña</label
           >
         </div>
-        <div class="mb-4">
-          <a href="#!" class="text-decoration-none"
-            >¿Olvidaste tu contraseña?</a
-          >
-        </div>
         <button
-          type="button"
-          class="btn btn-primary btn-block mb-4"
+          type="submit"
+          class="btn btn-primary btn-lg btn-block mt-3 mb-4"
           id="btnIniciarSesion"
         >
-          Iniciar sesión
+          Iniciar sesión</button
+        ><button
+          type="submit"
+          class="btn btn-secondary btn-block mb-5"
+          id="btnRecuperarContraseña"
+          //onclick="recuperarContraseña()"
+        >
+          ¿Olvidaste tu contraseña?
         </button>
+        <div id="ingresoErrorAdmin"></div>
         <div class="text-center">
           <p class="text-secondary">
             ¿No tienes cuenta aún?
@@ -128,7 +133,7 @@
     <footer class="container-fluid bg-new-foorter text-secondary">
       <div class="container pt-2">
         <div class="box-footer text-sm-center menuItems">
-          <div class="row my-2">
+          <div class="row mt-2">
             <div class="col-lg-4 col-md-3 col-sm-6 px-1 text-sm-center p-sm-0">
               <a
                 href="/index.html "
@@ -225,6 +230,6 @@
       </div>
     </footer>
     <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/login.js"></script>
+    <script src="/js/login.js" type="module"></script>
   </body>
 </html>

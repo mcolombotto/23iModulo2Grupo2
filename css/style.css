@@ -70,6 +70,7 @@ main {
   font-weight: bold;
   color: white;
 }
+
 /* inicio de media query del navbar y body */
 @media all and (max-width: 993px) {
   .bg-new {
@@ -115,3 +116,52 @@ diseño  2
 ackground: linear-gradient(90deg, #161718 3%, #1f2328 24%, #050b18 73%);
 }
 */
+
+.containerLogin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formLogin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.formLogin input {
+  width: 100%;
+}
+
+.containerRegistro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formRegistro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center
+  width: 100%;
+}
+
+.formRegistro input {
+  width: 100%;
+}
+
+.formRegistro button {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-outline {
+  width: 80%;
+  max-width: 400px;
+}

@@ -24,6 +24,15 @@
       src="https://kit.fontawesome.com/2e18571cb0.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("8DlyM3qKEyFvoWsG0");
+      })();
+    </script>
   </head>
   <body class="backgroundIndex">
     <header>
@@ -83,85 +92,95 @@
         </div>
       </nav>
     </header>
-    <main class="container">
+    <main class="containerRegistro">
       <section class="my-3">
         <h1 class="display-4 text-center fw-bold text-secondary">
           CREAR CUENTA
         </h1>
         <hr />
-        <form id="formRegistro" class="px-5 mx-5">
+        <form id="formRegistro" class="">
           <div class="mb-5">
-            <label for="nombreRegistro" class="form-label text-secondary fw-bold fs-5 ms-1"
+            <label
+              for="nombreRegistro"
+              class="form-label text-secondary fw-bold fs-5 ms-1"
               >Nombre</label
             >
-              <input
-                type="text"
-                class="form-control"
-                name="nombreRegistro"
-                id="nombreRegistro"
-                placeholder="Juan"
-                maxlength="40"
-                required
-              />
+            <input
+              type="text"
+              class="form-control"
+              name="nombreRegistro"
+              id="nombreRegistro"
+              placeholder="Juan"
+              maxlength="40"
+              required
+            />
           </div>
           <div class="mb-5">
-            <label for="apellidoRegistro" class="form-label text-secondary fw-bold fs-5 ms-1"
+            <label
+              for="apellidoRegistro"
+              class="form-label text-secondary fw-bold fs-5 ms-1"
               >Apellido</label
             >
-              <input
-                type="text"
-                class="form-control"
-                name="apellidoRegistro"
-                id="apellidoRegistro"
-                placeholder="Pérez"
-                maxlength="40"
-                required
-              />
+            <input
+              type="text"
+              class="form-control"
+              name="apellidoRegistro"
+              id="apellidoRegistro"
+              placeholder="Pérez"
+              maxlength="40"
+              required
+            />
           </div>
           <div class="mb-5">
-            <label for="emailRegistro" class="form-label text-secondary fw-bold fs-5 ms-1"
+            <label
+              for="emailRegistro"
+              class="form-label text-secondary fw-bold fs-5 ms-1"
               >Dirección de email</label
             >
-              <input
-                type="email"
-                class="form-control"
-                name="emailRegistro"
-                id="emailRegistro"
-                placeholder="juanperez@correo.com"
-                maxlength="40"
-                required
-              />
+            <input
+              type="email"
+              class="form-control"
+              name="emailRegistro"
+              id="emailRegistro"
+              placeholder="juanperez@correo.com"
+              maxlength="40"
+              required
+            />
           </div>
           <div class="mb-5">
-            <label for="contraseñaRegistro" class="form-label text-secondary fw-bold fs-5 ms-1"
+            <label
+              for="contraseñaRegistro"
+              class="form-label text-secondary fw-bold fs-5 ms-1"
               >Contraseña</label
             >
-              <input
-                type="password"
-                class="form-control"
-                name="contraseñaRegistro"
-                id="contraseñaRegistro"
-                placeholder="Mínimo 8 caracteres, una minúscula y una mayúscula"
-                maxlength="18"
-                required
-              />
+            <input
+              type="password"
+              class="form-control"
+              name="contraseñaRegistro"
+              id="contraseñaRegistro"
+              placeholder="Mínimo 8 caracteres, una minúscula y una mayúscula"
+              maxlength="18"
+              required
+            />
           </div>
           <div class="mb-5">
-            <label for="contraseñaRegistro2" class="form-label text-secondary fw-bold fs-5 ms-1"
-              >Contraseña</label
+            <label
+              for="contraseñaRegistro2"
+              class="form-label text-secondary fw-bold fs-5 ms-1"
+              >Repita la contraseña</label
             >
-              <input
-                type="password"
-                class="form-control"
-                name="contraseñaRegistro2"
-                id="contraseñaRegistro2"
-                placeholder="Ingrese nuevamente su contraseña"
-                maxlength="18"
-                required
-              />
-              <div id="contraseñaIncorrecta"></div>
+            <input
+              type="password"
+              class="form-control"
+              name="contraseñaRegistro2"
+              id="contraseñaRegistro2"
+              placeholder="Ingrese nuevamente su contraseña"
+              maxlength="18"
+              required
+            />
+            <div id="contraseñaIncorrecta"></div>
           </div>
-          <button class="btn btn-secondary fs-4 mb-4" type="submit">
+          <button class="btn btn-secondary btn-lg fs-4 mb-4 w-50 d-block mx-auto" type="submit">
             Regístrate
           </button>
         </form>

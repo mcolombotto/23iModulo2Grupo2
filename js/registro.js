@@ -1,4 +1,10 @@
-import { campoRequerido, validarGeneral, validarEmail, validarContraseña, validarContraseña2 } from "./validaciones.js";
+import {
+  campoRequerido,
+  validarGeneral,
+  validarEmail,
+  validarContraseña,
+  validarContraseña2,
+} from "./validacionesRegistro.js";
 import { User } from "./registroClass.js";
 
 let campoNombre = document.getElementById("nombreRegistro");
@@ -21,7 +27,7 @@ campoApellido.addEventListener("blur", () => {
 });
 
 campoEmail.addEventListener("blur", () => {
-  validarEmail(campoEmail);
+  validarEmail(campoEmail, listaUsuarios);
 });
 
 campoContraseña.addEventListener("blur", () => {
@@ -32,7 +38,6 @@ campoContraseña2.addEventListener("blur", () => {
   validarContraseña2(campoContraseña2);
 });
 
-
 function guardarUsuario(e) {
   e.preventDefault();
   if (
@@ -42,12 +47,10 @@ function guardarUsuario(e) {
       campoEmail,
       campoContraseña,
       campoContraseña2
-      )
-      ) {
-        if (usuarioExistente === false) {
-          crearUsuario();
-        } else {
-      modificarUsuario();
+    )
+  ) {
+    if (usuarioExistente === false) {
+      crearUsuario();
     }
   }
 }
@@ -59,16 +62,16 @@ function crearUsuario() {
     campoEmail.value,
     campoContraseña.value,
     campoContraseña2.value
-    );
+  );
   listaUsuarios.push(usuarioNuevo);
   guardarLocalStorage();
   Swal.fire(
     "Cuenta creada!",
     "Su cuenta ha sido creada correctamente",
     "success"
-    );
+  );
   limpiarFormulario();
-  }
+}
 
 function limpiarFormulario() {
   formRegistro.reset();

@@ -8,9 +8,19 @@ const campoRequerido = (input) => {
   }
 };
 
-const validarEmail = (input) => {
+const validarEmail = (input, email) => {
+  email?.map((e) => {
+    if (input === e.email) {
+      input.className = "form-control is-invalid";
+      return false;
+    } else {
+      input.className = "form-control is-valid";
+      return true;
+    }
+  });
+
   let validRegex =
-    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
   if (validRegex.test(input.value)) {
     input.className = "form-control is-valid";
     return true;
