@@ -26,7 +26,6 @@ form.addEventListener("submit", e=>{
     if(enter){
         parrafo.innerHTML = warning
     }else{
-        parrafo.innerHTML = "Enviado👌"
         Swal.fire({
             title: "Enviado👌",
             width: 600,
@@ -38,8 +37,8 @@ form.addEventListener("submit", e=>{
     url("https://ouch-cdn2.icons8.com/uKHtopmZTy7WgEsMrAtAs0I7kxCr7zVz3kNLr-CGPQc/rs:fit:256:256/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvMzI1/Lzg2ZTc5MWQxLTYz/NDYtNDI5MC05Mjlj/LTk3NjBmMzM5MDYy/Ny5zdmc.png")
     left top
     no-repeat
-  `
-        })
+  ` })
+  form.reset();
     }
 })
 
