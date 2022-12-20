@@ -24,17 +24,18 @@ const secretKey = '3ae885b76255f2259705f22d3579099c'
             "TextPart": message
         }]
     }); 
-
-     const requestOptions = JSON.stringify({
+    
+    
+     const requestOptions = {
         method: 'POST',
         headers: myHeaders,
         body: data,
-    });
+    };
 
      return fetch(`https://api.mailjet.com/v3.1/send`, requestOptions)
        .then(response => response.text())
        .then(result => console.log(result))
-        .catch(error => console.log('error', error));
+         .catch(error => console.log('error' + error.statusCode));
 } 
 
 form.addEventListener("submit", e=>{

@@ -126,8 +126,6 @@ filter: contrast(102%);
     width: 100%;
   }
   .backgroundContacto{
-/*     background: rgb(53,5,112);
-    background: radial-gradient(circle, rgb(17, 2, 57) 7%, rgb(3, 3, 35) 96%); */
     background: url("https://hbomax-images.warnermediacdn.com/module-assets/gradient2.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com");
     color:white;
     font-family: 'Signika', sans-serif;
