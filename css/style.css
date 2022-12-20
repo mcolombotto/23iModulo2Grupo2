@@ -141,6 +141,40 @@ main {
 .width-img-yuli {
   width: 67%;
 }
+.heading-title{
+  font-family: 'Rubik Spray Paint', cursiva;
+  padding-bottom: 5px;
+  font-size: x-large;
+}
+  .backgroundContacto{
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/315/481/104/avatar-2-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color: #050b18;
+    font-family: 'Signika', sans-serif;
+    font-weight: lighter;
+     letter-spacing: 1px;
+  }
+  .w-form-contact{
+    width: 50%;
+  }
+  .warning{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: blueviolet;
+    font-family: 'Signika', sans-serif;
+    font-weight: bold;
+    padding-top: 20px;
+  }
+  .margin_x_subtitle{
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+.comunicate:hover{
+  color: #0f0288;
+}
 .width-img-paul {
   width: 70%;
 }
@@ -644,12 +678,23 @@ th {
   width: 100%;
 }
 
+<<<<<<< HEAD
+  .backgroundContacto{
+    background: url("https://hbomax-images.warnermediacdn.com/module-assets/gradient2.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com");
+    color:white;
+    font-family: 'Signika', sans-serif;
+    font-weight: lighter;
+     letter-spacing: 1px;
+  }
+} 
+=======
 .containerRegistro {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+>>>>>>> 474fc98b4895b1f6397feff68092dbd23b2d6d9c
 
 .formRegistro {
   display: flex;
