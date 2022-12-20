@@ -157,6 +157,10 @@ main {
 }
 
 /*inicio del css de contacto */
+#bg-contacto-navbar{
+      background: radial-gradient(circle, rgba(5,5,112,1) 7%, rgba(3,3,40,1) 96%);
+
+}
   .backgroundContacto{
     background-image: url(https://p4.wallpaperbetter.com/wallpaper/315/481/104/avatar-2-wallpaper-preview.jpg);
     background-repeat: no-repeat;
@@ -166,6 +170,18 @@ main {
     font-family: 'Signika', sans-serif;
     font-weight: lighter;
      letter-spacing: 1px;
+  }
+  .w-form-contact{
+    width: 50%;
+  }
+  .warning{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: blueviolet;
+    font-family: 'Signika', sans-serif;
+    font-weight: bold;
+    padding-top: 20px;
   }
   .margin_x_subtitle{
     margin-left: 6rem;
@@ -457,14 +473,12 @@ background: linear-gradient(90deg, #161718 3%, #1f2328 24%, #050b18 73%);
     background: radial-gradient(circle, rgba(5,5,112,1) 7%, rgba(3,3,40,1) 96%);
 }
 
-
  .width-logo-img{
     width: 20%;
 }
 } 
 
 @media all and (max-width: 768px) {
-
  .width-logo-img{
     display: none;
 }
@@ -478,7 +492,18 @@ background: linear-gradient(90deg, #161718 3%, #1f2328 24%, #050b18 73%);
   background-size: cover;
 }
 }
+
 /* inicio del media query de contacto*/
+
+ @media all and (min-width:575px) and (max-width:700px) {
+  .margin_x_subtitle{
+ background-color: #050b18!important;
+ margin-left: 0;
+    margin-right: 0;
+  }
+  .w-form-contact{
+    width: 100%;
+  }
 
  @media all and (min-width:50px) and (max-width: 575px) {
 .size-title-nosotros{
@@ -489,9 +514,11 @@ background: linear-gradient(90deg, #161718 3%, #1f2328 24%, #050b18 73%);
    overflow: hidden;
    width: 110%!important;
 }
+
   .backgroundContacto{
-    background: rgb(53,5,112);
-    background: radial-gradient(circle, rgb(17, 2, 57) 7%, rgb(3, 3, 35) 96%);
+/*     background: rgb(53,5,112);
+    background: radial-gradient(circle, rgb(17, 2, 57) 7%, rgb(3, 3, 35) 96%); */
+    background: url("https://hbomax-images.warnermediacdn.com/module-assets/gradient2.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com");
     color:white;
     font-family: 'Signika', sans-serif;
     font-weight: lighter;
@@ -515,10 +542,10 @@ background: linear-gradient(90deg, #161718 3%, #1f2328 24%, #050b18 73%);
 .justify-icon-footer{
   justify-content: space-around;
  } 
- 
 } 
 
  @media all and (min-width:375px) and (max-width: 765px) {
   .padding-icons{ padding: 1em; 
   }
 }
+
