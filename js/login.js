@@ -2,14 +2,13 @@ import { validarEmailLogin, validarContraseña3 } from "./validacionesLogin.js";
 
 let usuarioAdmin = { email: "admin@admin.com", contraseña: "Admin1234" };
 
+let listaUsuarios2 = JSON.parse(localStorage.getItem("listaUsuarios")) || [];
 let campoEmailLogin = document.getElementById("emailLogin");
-let campoContraseñaLogin = document.getElementById("constraseñaLogin");
+let campoContraseñaLogin = document.getElementById("contraseñaLogin");
 let botonIniciarSesion = document.getElementById("btnIniciarSesion");
 let botonRecuperarContraseña = document.getElementById("btnRecuperarContraseña");
 
 let inicioSesion = false;
-
-let listaUsuarios2 = JSON.parse(localStorage.getItem("listaUsuarios"));
 
 campoEmailLogin.addEventListener("blur", () => {
   validarEmailLogin(campoEmailLogin);
@@ -60,7 +59,7 @@ function ingresoUsuario(e) {
       sessionStorage.setItem("usuarioActivo", JSON.stringify(resultado));
       window.location.replace(`index.html`);
     } else {
-      ingresoMensaje.innerHTML = `<p class="text-center text-danger border-light">${"EMAIL O CONTRASEÑA INCORRECTOS"}</p>`;
+      alert("EMAIL O CONTRASEÑA INCORRECTOS")
       window.setTimeout(function () {
         window.location.reload();
       }, 2000);
