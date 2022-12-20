@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="proyecto modulo 2 grupo 2 - comis. 23i - pagina web pelis-series">
-    <meta name="keywords" content="js, javascript, proyect, movies, series, website">
-    <meta name="author" content="Yuliana Mallorga, Mariano Colombotto, Luciano Danert, Paul Teves">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/movie_logo_favicon.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="proyecto modulo 2 grupo 2 - comis. 23i - pagina web pelis-series"
+    />
+    <meta
+      name="keywords"
+      content="js, javascript, proyect, movies, series, website"
+    />
+    <meta
+      name="author"
+      content="Yuliana Mallorga, Mariano Colombotto, Luciano Danert, Paul Teves"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="img/movie_logo_favicon.png"
+      type="image/x-icon"
+    />
     <title>Filmax</title>
-       <!-- Iconos de https://fontawesome.com/icons/ -->
+    <!-- Iconos de https://fontawesome.com/icons/ -->
     <script
       src="https://kit.fontawesome.com/2e18571cb0.js"
       crossorigin="anonymous"
     ></script>
-</head>
-<body class="backgroundIndex">
+  </head>
+  <body class="backgroundIndex">
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top bg-black bg-opacity-25 navbar-dark bg-new">
-        <div class="container">  
+      <nav
+        class="navbar navbar-expand-lg fixed-top bg-black bg-opacity-25 navbar-dark bg-new"
+      >
+        <div class="container">
           <a class="navbar-brand logo w-50 d-flex" href="/index.html">
-            <div class="logo">
-                    Filmax
-                </div> 
-            <figure class="width-logo-img">           
+            <div class="logo">Filmax</div>
+            <figure class="width-logo-img">
               <img
                 class="img-fluid"
                 src="/img/movie_logo_favicon.png"
                 alt="Logo del blog"
               />
-            </figure>            
+            </figure>
           </a>
           <button
             class="navbar-toggler"
@@ -45,7 +58,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="navbar-collapse collapse menuItems" id="barranavegacion">
-            <ul class="navbar-nav ms-auto navbar-nav-scroll navbar-navegacion">
+            <ul class="navbar-nav navbar-nav-scroll navbar-navegacion">
               <li class="nav-item">
                 <a
                   class="nav-link active"
@@ -53,30 +66,29 @@
                   href="/index.html"
                   >Inicio</a
                 >
-            <ul
-              class="navbar-nav navbar-nav-scroll  navbar-navegacion"
-            >
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link fuente" href="/pages/contacto.html"
                   >Contacto</a
                 >
               </li>
+
               <li class="nav-item w-50">
                 <a class="nav-link" href="/pages/nosotros.html">Acerca de</a>
               </li>
             </ul>
-           
-                 <button type="button" class="btn btn-dark m-lg-2 m-auto">
-                      <a class="nav-link"  href="/pages/login.html"
-                    >Login</a
-                  >
-                </button>
-                <button type="button" class="btn btn-primary m-lg-2">
-                  <a class="nav-link" href="/pages/registro.html">Registrate</a>
-                </button>         
+
+            <button type="button" class="btn btn-dark m-lg-2 m-auto">
+              <a class="nav-link" href="/pages/login.html">Login</a>
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary m-lg-2"
+              data-bs-toggle="modal"
+              data-bs-target="#modalRegistro"
+            >
+              Registrate
+            </button>
           </div>
         </div>
       </nav>
@@ -94,21 +106,31 @@
             reaparece.
           </h4>
           <div class="buttons">
-            <a href="/pages/404.html" class="my-2 me-2 btn btn-outline-light btn-lg"
+            <a
+              href="pages/404.html"
+              class="my-2 me-2 btn btn-outline-light btn-lg"
               >Reproducir</a
             >
-            <a href="#" class="my-2 mx-2 btn btn-secondary btn-lg"
+            <a
+              href="pages/detail.html"
+              class="my-2 mx-2 btn btn-secondary btn-lg"
               >Mas Informacion</a
             >
           </div>
           <div class="buttonsSmall">
-            <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+            <a
+              href="pages/404.html"
+              class="btn btn-outline-light btn-sm btn-circle"
               ><i class="fa-solid fa-play"></i
             ></a>
-            <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+            <a
+              href="pages/404.html"
+              class="btn btn-outline-light btn-sm btn-circle"
               ><i class="fa-solid fa-plus"></i
             ></a>
-            <a href="#" class="my-2 mx-2 btn btn-secondary btn-circle btn-sm"
+            <a
+              href="pages/detail.html"
+              class="my-2 mx-2 btn btn-secondary btn-circle btn-sm"
               >Mas Informacion</a
             >
           </div>
@@ -120,7 +142,7 @@
           <h4 class="my-lg-2 my-md-1 my-sm-1">Continuar viendo</h4>
 
           <div class="movie" id="movie1">
-            <a href="/pages/404.html">
+            <a href="pages/404.html">
               <img
                 src="img/theSocialNetwork.webp"
                 class="m-0 card-img-top"
@@ -147,7 +169,9 @@
                 data-bs-trigger="hover focus"
                 data-bs-content="Reproducir"
               >
-                <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+                <a
+                  href="pages/404.html"
+                  class="btn btn-outline-light btn-sm btn-circle"
                   ><i class="fa-solid fa-play"></i
                 ></a>
               </span>
@@ -158,7 +182,9 @@
                 data-bs-trigger="hover focus"
                 data-bs-content="Añadir a favoritos"
               >
-                <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+                <a
+                  href="pages/404.html"
+                  class="btn btn-outline-light btn-sm btn-circle"
                   ><i class="fa-solid fa-plus"></i
                 ></a>
               </span>
@@ -169,14 +195,16 @@
                 data-bs-trigger="hover focus"
                 data-bs-content="Episodios"
               >
-                <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+                <a
+                  href="pages/404.html"
+                  class="btn btn-outline-light btn-sm btn-circle"
                   ><i class="fa-solid fa-list"></i
                 ></a>
               </span>
             </div>
           </div>
           <div class="movie btn-circle" id="movie2">
-            <a href="/pages/404.html">
+            <a href="pages/404.html">
               <img
                 src="img/pruebaDeFuego.jpg"
                 class="m-0 card-img-top"
@@ -202,7 +230,9 @@
                 data-bs-trigger="hover focus"
                 data-bs-content="Reproducir"
               >
-                <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+                <a
+                  href="pages/404.html"
+                  class="btn btn-outline-light btn-sm btn-circle"
                   ><i class="fa-solid fa-play"></i
                 ></a>
               </span>
@@ -213,7 +243,9 @@
                 data-bs-trigger="hover focus"
                 data-bs-content="Añadir a favoritos"
               >
-                <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+                <a
+                  href="pages/404.html"
+                  class="btn btn-outline-light btn-sm btn-circle"
                   ><i class="fa-solid fa-plus"></i
                 ></a>
               </span>
@@ -224,14 +256,16 @@
                 data-bs-trigger="hover focus"
                 data-bs-content="Episodios"
               >
-                <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+                <a
+                  href="pages/404.html"
+                  class="btn btn-outline-light btn-sm btn-circle"
                   ><i class="fa-solid fa-list"></i
                 ></a>
               </span>
             </div>
           </div>
           <div class="movieHidden movie" id="movie3">
-            <a href="/pages/404.html">
+            <a href="pages/404.html">
               <img
                 src="img/juegoDeHonor.jpg"
                 class="m-0 card-img-top"
@@ -250,13 +284,19 @@
                   aria-valuemax="100"
                 ></div>
               </div>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-play"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-plus"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-list"></i
               ></a>
             </div>
@@ -281,19 +321,25 @@
                   aria-valuemax="100"
                 ></div>
               </div>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-play"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-plus"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-list"></i
               ></a>
             </div>
           </div>
           <div class="movieHidden movie" id="movie5">
-            <a href="/pages/404.html">
+            <a href="pages/404.html">
               <img
                 src="img/laTeoriaDelTodo.jpg"
                 class="m-0 card-img-top"
@@ -312,19 +358,25 @@
                   aria-valuemax="100"
                 ></div>
               </div>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-play"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-plus"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-list"></i
               ></a>
             </div>
           </div>
           <div class="movieHidden movie" id="movie6">
-            <a href="/pages/404.html">
+            <a href="pages/404.html">
               <img
                 src="img/elCodigoEnigma.jpg"
                 class="m-0 card-img-top"
@@ -343,20 +395,26 @@
                   aria-valuemax="100"
                 ></div>
               </div>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-play"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-plus"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-list"></i
               ></a>
             </div>
           </div>
 
           <div class="arrow d-flex flex-column justify-content-center">
-            <a class="text-white" href="/pages/404.html">
+            <a class="text-white" href="pages/404.html">
               <h2 class="align-items-center">
                 <i class="fa-solid fa-angle-right"></i>
               </h2>
@@ -368,23 +426,29 @@
           <h4 class="my-lg-2 my-md-1 my-sm-1">Nuevos Lanzamientos</h4>
           <div class="row"></div>
           <div class="movie" id="movie1a">
-            <a href="/pages/404.html">
+            <a href="pages/404.html">
               <img src="img/neymar.jpg" class="m-0 card-img-top" alt="Neymar" />
             </a>
             <div class="card-body d-none" id="box1a">
-              <a href="/pages/404.html" class="ms-2 btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="ms-2 btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-play"></i
               ></a>
-              <a href="/pages/404.html" class="mx-1 btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="mx-1 btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-regular fa-thumbs-up"></i
               ></a>
-              <a href="/pages/404.html" class="me-0 btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="me-0 btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-list"></i
               ></a>
             </div>
           </div>
           <div class="movie" id="movie2a">
-            <a href="/pages/404.html">
+            <a href="pages/404.html">
               <img
                 src="img/soyGeorgina.jpg"
                 class="m-0 card-img-top"
@@ -392,35 +456,47 @@
               />
             </a>
             <div class="card-body d-none" id="box2a">
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-play"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-regular fa-thumbs-up"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-list"></i
               ></a>
             </div>
           </div>
           <div class="movieHidden movie" id="movie3a">
-            <a href="/pages/404.html">
+            <a href="pages/404.html">
               <img src="img/thor.jpg" class="m-0 card-img-top" alt="Thor" />
             </a>
             <div class="card-body d-none" id="box3a">
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-play"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-regular fa-thumbs-up"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-list"></i
               ></a>
             </div>
           </div>
           <div class="movieHidden movie" id="movie4a">
-            <a href="/pages/404.html">
+            <a href="pages/404.html">
               <img
                 src="img/maverick.jpg"
                 class="m-0 card-img-top"
@@ -428,19 +504,25 @@
               />
             </a>
             <div class="card-body d-none" id="box4a">
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-play"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-regular fa-thumbs-up"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-list"></i
               ></a>
             </div>
           </div>
           <div class="movieHidden movie" id="movie5a">
-            <a href="/pages/404.html">
+            <a href="pages/404.html">
               <img
                 src="img/buzz.jpg"
                 class="m-0 card-img-top"
@@ -448,19 +530,25 @@
               />
             </a>
             <div class="card-body d-none" id="box5a">
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-play"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-regular fa-thumbs-up"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-list"></i
               ></a>
             </div>
           </div>
           <div class="movieHidden movie" id="movie6a">
-            <a href="/pages/404.html">
+            <a href="pages/404.html">
               <img
                 src="img/londresBajoFuego.jpg"
                 class="m-0 card-img-top"
@@ -468,19 +556,25 @@
               />
             </a>
             <div class="card-body d-none" id="box6a">
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-play"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-regular fa-thumbs-up"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-list"></i
               ></a>
             </div>
           </div>
           <div class="arrow d-flex flex-column justify-content-center">
-            <a class="text-white" href="/pages/404.html">
+            <a class="text-white" href="pages/404.html">
               <h2 class="align-items-center">
                 <i class="fa-solid fa-angle-right"></i>
               </h2>
@@ -492,7 +586,7 @@
           <h4 class="my-lg-2 my-md-1 my-sm-1">Peliculas Taquilleras</h4>
 
           <div class="movie" id="movie1b">
-            <a href="/pages/404.html">
+            <a href="pages/404.html">
               <img
                 src="img/ilusionistas2.jpg"
                 class="m-0 card-img-top"
@@ -500,51 +594,69 @@
               />
             </a>
             <div class="card-body d-none" id="box1b">
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-play"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-regular fa-thumbs-up"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-list"></i
               ></a>
             </div>
           </div>
           <div class="movie" id="movie2b">
-            <a href="/pages/404.html">
+            <a href="pages/404.html">
               <img src="img/click.jpg" class="m-0 card-img-top" alt="Click" />
             </a>
             <div class="card-body d-none" id="box2b">
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-play"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-regular fa-thumbs-up"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-list"></i
               ></a>
             </div>
           </div>
           <div class="movieHidden movie" id="movie3b">
-            <a href="/pages/404.html">
+            <a href="pages/404.html">
               <img src="img/ted2.jpg" class="m-0 card-img-top" alt="Ted 2" />
             </a>
             <div class="card-body d-none" id="box3b">
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-play"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-regular fa-thumbs-up"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-list"></i
               ></a>
             </div>
           </div>
           <div class="movieHidden movie" id="movie4b">
-            <a href="/pages/404.html">
+            <a href="pages/404.html">
               <img
                 src="img/spidermanffh.jpg"
                 class="m-0 card-img-top"
@@ -552,19 +664,25 @@
               />
             </a>
             <div class="card-body d-none" id="box4b">
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-play"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-regular fa-thumbs-up"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-list"></i
               ></a>
             </div>
           </div>
           <div class="movieHidden movie" id="movie5b">
-            <a href="/pages/404.html">
+            <a href="pages/404.html">
               <img
                 src="img/adamProject.png"
                 class="m-0 card-img-top"
@@ -572,35 +690,47 @@
               />
             </a>
             <div class="card-body d-none" id="box5b">
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-play"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-regular fa-thumbs-up"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-list"></i
               ></a>
             </div>
           </div>
           <div class="movieHidden movie" id="movie6b">
-            <a href="/pages/404.html">
+            <a href="pages/404.html">
               <img src="img/8mile.jpg" class="m-0 card-img-top" alt="8 mile" />
             </a>
             <div class="card-body d-none" id="box6b">
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-play"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-regular fa-thumbs-up"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-list"></i
               ></a>
             </div>
           </div>
           <div class="arrow d-flex flex-column justify-content-center">
-            <a class="text-white" href="/pages/404.html">
+            <a class="text-white" href="pages/404.html">
               <h2 class="align-items-center">
                 <i class="fa-solid fa-angle-right"></i>
               </h2>
@@ -611,80 +741,106 @@
         <section class="row mt-2 mb-5">
           <h4 class="my-lg-2 my-md-1 my-sm-1">Series para maratonear</h4>
 
-          <div class="movie " id="movie1c">
-            <a href="/pages/404.html">
-              <img src="img/suits.jpg" class="m-0 card-img-top" alt="Suits"  />
+          <div class="movie" id="movie1c">
+            <a href="pages/404.html">
+              <img src="img/suits.jpg" class="m-0 card-img-top" alt="Suits" />
             </a>
             <div class="card-body d-none" id="box1c">
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-play"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-regular fa-thumbs-up"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-list"></i
               ></a>
             </div>
           </div>
 
-
           <div class="movie" id="movie2c">
-            <a href="/pages/404.html"><img src="img/saul.webp" class="m-0 card-img-top"
+            <a href="pages/404.html"
+              ><img
+                src="img/saul.webp"
+                class="m-0 card-img-top"
                 alt="Better Call Saul"
               />
             </a>
             <div class="card-body d-none" id="box2c">
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-play"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-regular fa-thumbs-up"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-list"></i
               ></a>
             </div>
           </div>
 
-              <div class="movieHidden movie" id="movie3c">
-                <a href="/pages/404.html">
-                  <img
-                    src="img/emily.jpg"
-                    class="m-0 card-img-top"
-                    alt="Emily in Paris"
-                  />
-                </a>
-                <div class="card-body d-none" id="box3c">
-                  <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
-                    ><i class="fa-solid fa-play"></i
-                  ></a>
-                  <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
-                    ><i class="fa-regular fa-thumbs-up"></i
-                  ></a>
-                  <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
-                    ><i class="fa-solid fa-list"></i
-                  ></a>
-                </div>
-              </div>  
+          <div class="movieHidden movie" id="movie3c">
+            <a href="pages/404.html">
+              <img
+                src="img/emily.jpg"
+                class="m-0 card-img-top"
+                alt="Emily in Paris"
+              />
+            </a>
+            <div class="card-body d-none" id="box3c">
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
+                ><i class="fa-solid fa-play"></i
+              ></a>
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
+                ><i class="fa-regular fa-thumbs-up"></i
+              ></a>
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
+                ><i class="fa-solid fa-list"></i
+              ></a>
+            </div>
+          </div>
           <div class="movieHidden movie" id="movie4c">
-            <a href="/pages/404.html">
+            <a href="pages/404.html">
               <img src="img/ozark.jpg" class="m-0 card-img-top" alt="Ozark" />
             </a>
             <div class="card-body d-none" id="box4c">
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-play"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-regular fa-thumbs-up"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-list"></i
               ></a>
             </div>
           </div>
           <div class="movieHidden movie" id="movie5c">
-            <a href="/pages/404.html">
+            <a href="pages/404.html">
               <img
                 src="img/breakingBad.jpg"
                 class="m-0 card-img-top"
@@ -692,19 +848,25 @@
               />
             </a>
             <div class="card-body d-none" id="box5c">
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-play"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-regular fa-thumbs-up"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-list"></i
               ></a>
             </div>
           </div>
           <div class="movieHidden movie" id="movie6c">
-            <a href="/pages/404.html">
+            <a href="pages/404.html">
               <img
                 src="img/witcher.webp"
                 class="m-0 card-img-top"
@@ -712,19 +874,25 @@
               />
             </a>
             <div class="card-body d-none" id="box6c">
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-play"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-regular fa-thumbs-up"></i
               ></a>
-              <a href="/pages/404.html" class="btn btn-outline-light btn-sm btn-circle"
+              <a
+                href="pages/404.html"
+                class="btn btn-outline-light btn-sm btn-circle"
                 ><i class="fa-solid fa-list"></i
               ></a>
             </div>
           </div>
           <div class="arrow d-flex flex-column justify-content-center">
-            <a class="text-white" href="/pages/404.html">
+            <a class="text-white" href="pages/404.html">
               <h2 class="align-items-center">
                 <i class="fa-solid fa-angle-right"></i>
               </h2>
@@ -736,11 +904,14 @@
     <footer class="container-fluid bg-new-foorter text-secondary">
       <div class="container pt-2">
         <div class="box-footer text-sm-center menuItems">
-          <div class="row my-2">
-            <div class="col-lg-4 col-md-3 col-sm-6 px-1 text-sm-center p-sm-0">       
-                <a href="/index.html " class="nav-item logo_footer logo  text-light text-light">
-                 Filmax
-                </a>
+          <div class="row mt-2">
+            <div class="col-lg-4 col-md-3 col-sm-6 px-1 text-sm-center p-sm-0">
+              <a
+                href="/index.html "
+                class="nav-item logo_footer logo text-light text-light"
+              >
+                Filmax
+              </a>
             </div>
             <div class="col-lg-4 col-md-3 col-sm-6 text-sm-center p-sm-0">
               <ul class="list-unstyled">
@@ -752,19 +923,19 @@
                     href="/index.html"
                     >Inicio</a
                   >
-                </li>                
-                 <li class="nav-item link_hover">
-                  <a class="nav-link  link_hover"  href="/pages/contacto.html"
+                </li>
+                <li class="nav-item link_hover">
+                  <a class="nav-link link_hover" href="pages/contacto.html"
                     >Contacto</a
                   >
-                </li>  
+                </li>
                 <li class="nav-item">
-                  <a class="nav-link link_hover" href="/pages/nosotros.html"
+                  <a class="nav-link link_hover" href="pages/nosotros.html"
                     >Acerca de</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link link_hover" href="/pages/login.html"
+                  <a class="nav-link link_hover" href="pages/login.html"
                     >Login</a
                   >
                 </li>
@@ -813,15 +984,18 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-12 px-1 text-center p-sm-0 lead">    
-                <hr>   
-                <p>© 2022 Todos los derechos reservados. Filmax se usa bajo licencia.</p> 
+            <div class="col-lg-12 px-1 text-center p-sm-0 lead">
+              <hr />
+              <p>
+                © 2022 Todos los derechos reservados. Filmax se usa bajo
+                licencia.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </footer>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/index.js"></script>
   </body>
 </html>

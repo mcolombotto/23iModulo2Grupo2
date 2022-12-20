@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Spray+Paint&display=swap");
-@import url(https://fonts.googleapis.com/css2?family=Signika:wght@100;200;300;400;500;600;700&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@100;200;300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -8,7 +8,11 @@
 }
 /* color de fondo de la pàgina en general */
 .backgroundIndex {
-  background: rgb(29, 29, 45);
+  background: radial-gradient(
+    circle,
+    rgba(5, 5, 112, 1) 7%,
+    rgba(3, 3, 40, 1) 96%
+  );
   font-family: "Roboto", sans-serif;
 }
 .logo {
@@ -16,150 +20,126 @@
   font-size: -webkit-xxx-large;
   letter-spacing: 1px;
 }
+.width-logo-img {
+  width: 11%;
+}
 .menuItems {
   font-family: "Signika", sans-serif;
   font-weight: lighter;
   letter-spacing: 1px;
 }
+
 main {
-  padding-top: 126px;
+  padding-top: 116px;
 }
+
+.width-logo-img {
+  width: 11%;
+}
+
+/*inicio del css de contacto */
+#bg-contacto-navbar {
+  background: radial-gradient(
+    circle,
+    rgba(5, 5, 112, 1) 7%,
+    rgba(3, 3, 40, 1) 96%
+  );
+}
+.heading-title {
+  font-family: "Rubik Spray Paint", cursiva;
+  padding-bottom: 5px;
+  font-size: x-large;
+}
+
+.backgroundContacto {
+  background-image: url(https://p4.wallpaperbetter.com/wallpaper/315/481/104/avatar-2-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  color: #050b18;
+}
+
+/*inicio del css de el archivo 404 */
+
+#navbarError404 {
+  background: radial-gradient(
+    circle,
+    rgba(5, 5, 112, 1) 7%,
+    rgba(3, 3, 40, 1) 96%
+  );
+}
+
+/* #navbarError404:hover{
+} */
+#paginaError {
+  height: 625px;
+  position: relative;
+}
+#paginaError:hover {
+  filter: contrast(4.5);
+}
+
+.letter-size {
+  font-size: calc(1.625rem + 4.5vw);
+  font-family: "Signika", sans-serif;
+}
+.text-position {
+  top: 224px;
+  left: 507px;
+}
+.picture-error {
+  object-fit: cover;
+  height: 473px;
+}
+
 .imagen-avatar {
-  /*background-image: url(https://p4.wallpaperbetter.com/wallpaper/970/460/972/avatar-2-2015-avatar-2-pandora-poster-wallpaper-preview.jpg);*/
   height: 1000px;
   width: 100%;
   filter: brightness(40%);
   object-fit: cover;
 }
 
-/*inicio del css del footer */
-
-.bg-new-foorter {
-  background: linear-gradient(90deg, #161718 3%, #1f2328 24%, #050b18 73%);
+/*inicio del css de el archivo 404 */
+#navbarError404 {
+  background: radial-gradient(
+    circle,
+    rgba(5, 5, 112, 1) 7%,
+    rgba(3, 3, 40, 1) 96%
+  );
+}
+/* #navbarError404:hover{
+} */
+#paginaError {
+  height: 625px;
+  position: relative;
+}
+#paginaError:hover {
+  filter: contrast(4.5);
 }
 
-.logo_footer {
-  filter: drop-shadow(23px 23px 48px #0d6efd);
-  text-decoration: none;
+.letter-size {
+  font-size: calc(1.625rem + 4.5vw);
+  font-family: "Signika", sans-serif;
 }
-
-/* hovers del footer */
-.logo_footer:hover {
-  filter: contrast(102%);
+.text-position {
+  top: 224px;
+  left: 507px;
 }
-
-.link_hover:hover {
-  font-weight: bold;
-  color: white;
-}
-/* inicio de media query del navbar y body */
-@media all and (max-width: 993px) {
-  .bg-new {
-    background: radial-gradient(
-      circle,
-      rgb(5, 5, 65) 7%,
-      rgba(3, 3, 40, 1) 96%
-    );
-  }
-}
-
-/* inicio de media query del footer */
-@media all and (min-width: 50px) and (max-width: 576px) {
-  .box-footer {
-    width: auto;
-    margin: auto;
-    text-align: center;
-  }
-  .display-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .justify-icon-footer {
-    justify-content: space-around;
-  }
-}
-
-
-
-
-@media all and (max-width: 576px) {
-
-  .summary{
-    display: none!important;
-  }
-  .buttonsSmall{
-    display:block!important;
-  }
-  .buttons{
-    display:none!important;
-  }
-  
-}
-
-
-
-@media all and (max-width: 992px) {
-
-  .title {
-    display: none!important;
-  }
-  .subtitle{
-  display:block!important;
-}
-
-.summary{
-  font-size: small;
-  width:75%!important;
-}
-
-.controles {
-  height: 100%!important;
+.picture-error {
   object-fit: cover;
-=======
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Spray+Paint&display=swap');  
-@import url(https://fonts.googleapis.com/css2?family=Signika:wght@100;200;300;400;500;600;700&display=swap);
-
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  
-
-}
-/* color de fondo de la pàgina en general */
-  .backgroundIndex{
-    background: radial-gradient(circle, rgba(5,5,112,1) 7%, rgba(3,3,40,1) 96%);
-    font-family:  'Roboto', sans-serif; 
-  }
-.logo{
-   font-family: 'Rubik Spray Paint', cursiva;
-   font-size: -webkit-xxx-large;
-   letter-spacing: 1px;
-}
-.width-logo-img{
-    width: 11%;
-}
-.menuItems{
-    font-family: 'Signika', sans-serif;
-    font-weight: lighter;
-     letter-spacing: 1px;
-}
-  main{
-  padding-top: 114px;
-}
-.imagen-avatar{
-    background-image: url(https://p4.wallpaperbetter.com/wallpaper/970/460/972/avatar-2-2015-avatar-2-pandora-poster-wallpaper-preview.jpg);
-    width: 100%;
-    height: 500px;
+  height: 473px;
 }
 
-/*inicio del css de contacto */
-#bg-contacto-navbar{
-      background: radial-gradient(circle, rgba(5,5,112,1) 7%, rgba(3,3,40,1) 96%);
-
+/* css de las imagenes  del equipo seccion nosotros*/
+#navbar-bg-nosotros {
+  background: radial-gradient(
+    circle,
+    rgba(5, 5, 112, 1) 7%,
+    rgba(3, 3, 40, 1) 96%
+  );
+}
+.width-img-yuli {
+  width: 67%;
 }
 .heading-title{
   font-family: 'Rubik Spray Paint', cursiva;
@@ -194,8 +174,25 @@ main {
   }
 .comunicate:hover{
   color: #0f0288;
+}
+.width-img-paul {
+  width: 70%;
+}
+.img-wrapper-equipo:hover .imagen-filter {
+  filter: contrast(100%);
+}
+.card-wrapper:hover .imagen-filter {
+  filter: contrast(100%);
   scale: 1.1;
 }
+.contenedor-img {
+  overflow: hidden;
+}
+.imagen-filter {
+  transition: all 0.5s;
+  filter: brightness(38%);
+}
+
 /*inicio del css de el archivo nosotros */
 .backgroundNosotros{
   background: radial-gradient(circle, rgba(5,5,112,1) 7%, rgba(3,3,40,1) 96%);
@@ -207,7 +204,7 @@ main {
   font-weight: bold;
   font-size: -webkit-xxx-large;
 }
-/* css de la pagina acerca de nosotros */
+
 .bg-article{
   background: url(https://www.shutterstock.com/image-vector/cinema-blue-background-3d-realistic-600w-775574110.jpg);
   background-repeat: no-repeat;
@@ -228,7 +225,6 @@ main {
   margin-left: 20px;
 }
 
-/* css de las imagenes  del equipo seccion nosotros*/
 #navbar-bg-nosotros{
   background: radial-gradient(circle, rgba(5,5,112,1) 7%, rgba(3,3,40,1) 96%);
 
@@ -254,93 +250,258 @@ main {
   filter: brightness(38%);
 }
 
-/*inicio del css de el archivo 404 */
-#navbarError404{
-  background: radial-gradient(circle, rgba(5,5,112,1) 7%, rgba(3,3,40,1) 96%);
-
-}
-/* #navbarError404:hover{
-} */
-#paginaError{
-  height: 625px;
-  position: relative;
-}
-#paginaError:hover{
-filter: contrast(4.5);
-}
-  
-
-
-.letter-size{
-  font-size: calc(1.625rem + 4.5vw);
-  font-family: 'Signika', sans-serif;
-}
-.text-position{
-    top: 224px;
-    left: 507px;
-}
-.picture-error{
-  object-fit: cover;
-  height: 473px;
-}
 /*inicio del css del footer */
 
-.bg-new-foorter{
+.bg-new-foorter {
   background: linear-gradient(90deg, #161718 3%, #1f2328 24%, #050b18 73%);
 }
 
-.logo_footer{
-  filter:drop-shadow(23px 23px
-        48px #0d6efd);
-    text-decoration: none;    
+.logo_footer {
+  filter: drop-shadow(23px 23px 48px #0d6efd);
+  text-decoration: none;
 }
 
 /* hovers del footer */
-.logo_footer:hover{  
-filter: contrast(102%);
-} 
+.logo_footer:hover {
+  filter: contrast(102%);
+}
 
-.link_hover:hover{
+.link_hover:hover {
   font-weight: bold;
   color: white;
 }
 
-.movieTitle {
-  position: absolute;
-  top: 50%!important;
-  left: 10%;
-}
-.movie {
-  object-fit: contain!important;
-  height: 10%!important;
-  width: 45%!important;
+/*inicio del css del footer */
+
+.logo_footer {
+  filter: drop-shadow(23px 23px 48px #0d6efd);
+  text-decoration: none;
 }
 
-.card-img-top {
-  height: auto!important;
+/* hovers del footer */
+.logo_footer:hover {
+  filter: contrast(102%);
 }
 
-.movieHidden{
-  display:none!important;
+.link_hover:hover {
+  font-weight: bold;
+  color: white;
 }
 
-.arrow{
-  margin: 0!important;
-  height: auto!important;
+/* inicio del media query de contacto*/
+
+@media all and (min-width: 50px) and (max-width: 700px) {
+  .margin_x_subtitle {
+    background-color: #050b18 !important;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .w-form-contact {
+    width: 100%;
+  }
+  .backgroundContacto {
+    background: url("https://hbomax-images.warnermediacdn.com/module-assets/gradient2.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com");
+    color: white;
+    font-family: "Signika", sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1px;
+  }
 }
 
-.contenedor {
-  width: 100%!important;
-}
+/* inicio de media query del archivo 404*/
+@media all and (min-width: 620px) and (max-width: 861px) {
+  .letter-size {
+    font-size: calc(1.625rem + 2.5vw);
+    font-family: "Signika", sans-serif;
+  }
+  .text-position {
+    top: 118px;
+    left: 30px;
+  }
 }
 
+@media all and (min-width: 400px) and (max-width: 620px) {
+  .letter-size {
+    font-size: calc(1rem + 1.5vw);
+    font-family: "Signika", sans-serif;
+  }
+  .text-position {
+    top: 118px;
+    left: 55px;
+  }
+}
+
+@media all and (min-width: 50px) and (max-width: 400px) {
+  .letter-size {
+    font-size: calc(1rem + 1vw);
+    font-family: "Signika", sans-serif;
+  }
+  .text-position {
+    top: 118px;
+    left: 5px;
+  }
+  #paginaError {
+    height: 525px;
+    position: relative;
+  }
+  .picture-error {
+    object-fit: cover;
+    height: 370px;
+    width: auto;
+  }
+}
+
+/* inicio de media query del navbar y body */
+@media all and (max-width: 993px) {
+  .bg-new {
+    background: radial-gradient(
+      circle,
+      rgba(5, 5, 112, 1) 7%,
+      rgba(3, 3, 40, 1) 96%
+    );
+  }
+
+  .width-logo-img {
+    width: 20%;
+  }
+}
+
+/* inicio del media query de nosotros */
+@media all and (min-width: 50px) and (max-width: 575px) {
+  .bg-article {
+    background: url("https://hbomax-images.warnermediacdn.com/module-assets/gradient2.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .width-logo-img {
+    display: none;
+  }
+}
+/* inicio de media query del footer */
+@media all and (min-width: 50px) and (max-width: 576px) {
+  .box-footer {
+    width: auto;
+    margin: auto;
+    text-align: center;
+  }
+  .display-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .justify-icon-footer {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .summary {
+    display: none;
+  }
+  .buttonsSmall {
+    display: block !important;
+    text-align: left;
+  }
+  .buttons {
+    display: none !important;
+  }
+  .summaryDetail {
+    text-align: left;
+    width: 90% !important;
+    font-size: x-small !important;
+  }
+}
+
+@media all and (min-width: 375px) and (max-width: 765px) {
+  .padding-icons {
+    padding: 1em;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .summary {
+    display: none !important;
+  }
+  .buttonsSmall {
+    display: block !important;
+  }
+  .buttons {
+    display: none !important;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .title {
+    display: none !important;
+  }
+  .subtitle {
+    display: block !important;
+  }
+
+  .summary {
+    font-size: small !important;
+    width: 75% !important;
+  }
+
+  .controles {
+    height: 100% !important;
+    object-fit: cover;
+  }
+
+  .movieTitle {
+    position: absolute;
+
+    top: 30% !important;
+
+    left: 10%;
+  }
+  .movie {
+    object-fit: contain !important;
+    height: 10% !important;
+    width: 45% !important;
+  }
+
+  .card-img-top {
+    height: auto !important;
+  }
+
+  .movieHidden {
+    display: none !important;
+  }
+
+  .arrow {
+    margin: 0 !important;
+    height: auto !important;
+  }
+
+  .contenedor {
+    width: 100% !important;
+  }
+
+  table {
+    display: none !important;
+  }
+  .summaryDetail {
+    width: 75% !important;
+  }
+}
 
 @media all and (min-width: 375px) and (max-width: 765px) {
   .padding-icons {
     padding: 1em;
   }
 
-
+  .titleMovie {
+    font-size: large !important;
+  }
+  .icons {
+    display: none;
+  }
 }
 
 .movie {
@@ -363,7 +524,7 @@ filter: contrast(102%);
 .summary {
   text-align: left;
   width: 50%;
-  font-size:medium!important;
+  font-size: large !important;
 }
 
 .movieTitle {
@@ -371,31 +532,31 @@ filter: contrast(102%);
   top: 10%;
   left: 10%;
 }
-.movieHidden{
-  display:block;
+.movieHidden {
+  display: block;
 }
 
 .title {
   scale: 1;
 }
 .subtitle {
-  display:none;
-  text-align: left;;
+  display: none;
+  text-align: left;
 }
 .buttons {
   display: flex;
   flex-direction: row;
   justify-content: start;
 }
-.buttonsSmall{
-  display:none;
+.buttonsSmall {
+  display: none;
 }
 .mainImage {
   position: relative;
   display: inline-block;
   text-align: center;
   width: 100%;
-  height : 100%;
+  height: 100%;
 }
 
 .contenedor {
@@ -422,104 +583,102 @@ filter: contrast(102%);
 .card-img-top {
   height: 175px;
 }
-/*
-diseño 1
-background: linear-gradient(90deg, #141619 0%, #1b1f22 27%, #0a1424 63%);
-diseño  2
-background: linear-gradient(90deg, #161718 3%, #1f2328 24%, #050b18 73%);
+
+.icons {
+  text-align: left;
+  font-size: large;
 }
 
-*/
-=======
-/* inicio de media query del archivo 404*/
- @media all and (min-width:620px) and (max-width: 861px) {
-.letter-size{
-  font-size: calc(1.625rem + 2.5vw);
-  font-family: 'Signika', sans-serif;
+table {
+  width: 50%;
+  text-align: left;
+  font-size: large;
 }
-.text-position{
+th {
+  text-align: left;
+  font-size: large;
+  width: 15%;
+}
+
+.brillo {
+  filter: brightness(30%);
+}
+
+/* inicio de media query del archivo 404*/
+@media all and (min-width: 620px) and (max-width: 861px) {
+  .letter-size {
+    font-size: calc(1.625rem + 2.5vw);
+    font-family: "Signika", sans-serif;
+  }
+  .text-position {
     top: 118px;
     left: 30px;
-}
+  }
 }
 
- @media all and (min-width:400px) and (max-width: 620px) {
-.letter-size{
-  font-size: calc(1rem + 1.5vw);
-  font-family: 'Signika', sans-serif;
-}
-.text-position{
+@media all and (min-width: 400px) and (max-width: 620px) {
+  .letter-size {
+    font-size: calc(1rem + 1.5vw);
+    font-family: "Signika", sans-serif;
+  }
+  .text-position {
     top: 118px;
     left: 55px;
+  }
 }
-}
- @media all and (min-width:50px) and (max-width: 400px) {
-.letter-size{
-  font-size: calc(1rem + 1vw);
-  font-family: 'Signika', sans-serif;
-}
-.text-position{
+@media all and (min-width: 50px) and (max-width: 400px) {
+  .letter-size {
+    font-size: calc(1rem + 1vw);
+    font-family: "Signika", sans-serif;
+  }
+  .text-position {
     top: 118px;
     left: 5px;
   }
-#paginaError{
-  height: 525px;
-  position: relative;
-}
-  .picture-error{
-  object-fit: cover;
-  height: 370px;
-  width: auto;
-}
-}
-/* inicio de media query del navbar y body */
- @media all and (max-width: 993px) {
-.bg-new{
-    background: radial-gradient(circle, rgba(5,5,112,1) 7%, rgba(3,3,40,1) 96%);
-}
-
- .width-logo-img{
-    width: 20%;
-}
-} 
-
-@media all and (max-width: 768px) {
- .width-logo-img{
-    display: none;
-}
-}  
-/* inicio del media query de nosotros */
-@media all and (min-width:50px) and (max-width: 575px) {
-.bg-article{
-  background: url("https://hbomax-images.warnermediacdn.com/module-assets/gradient2.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-}
-
-/* inicio del media query de contacto*/
-
- @media all and (min-width:575px) and (max-width:700px) {
-  .margin_x_subtitle{
- background-color: #050b18!important;
- margin-left: 0;
-    margin-right: 0;
+  #paginaError {
+    height: 525px;
+    position: relative;
   }
-  .w-form-contact{
-    width: 100%;
+  .picture-error {
+    object-fit: cover;
+    height: 370px;
+    width: auto;
   }
-
- @media all and (min-width:50px) and (max-width: 575px) {
-.size-title-nosotros{
-  font-weight: bold;
-  font-size: x-large;
 }
-.contenedor-img-equipo{
-   overflow: hidden;
-   width: 110%!important;
+.titleMovie {
+  text-align: left;
+}
+.movieTitleDetail {
+  position: absolute;
+  top: 10% !important;
+  left: 10%;
+}
+.summaryDetail {
+  text-align: left;
+  width: 50%;
+  font-size: large;
 }
 
+.containerLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.formLogin input {
+  width: 100%;
+}
+
+<<<<<<< HEAD
   .backgroundContacto{
     background: url("https://hbomax-images.warnermediacdn.com/module-assets/gradient2.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com");
     color:white;
@@ -528,27 +687,34 @@ background: linear-gradient(90deg, #161718 3%, #1f2328 24%, #050b18 73%);
      letter-spacing: 1px;
   }
 } 
-
-/* inicio de media query del footer */
- @media all and (min-width:50px) and (max-width: 576px) {
- .box-footer{
-  width: auto;
-  margin: auto;
-  text-align: center;
- }
- .display-flex{
+=======
+.containerRegistro {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
- }
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+>>>>>>> 474fc98b4895b1f6397feff68092dbd23b2d6d9c
 
-.justify-icon-footer{
-  justify-content: space-around;
- } 
-} 
-
- @media all and (min-width:375px) and (max-width: 765px) {
-  .padding-icons{ padding: 1em; 
-  }
+.formRegistro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
+.formRegistro input {
+  width: 100%;
+}
+
+.formRegistro button {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-outline {
+  width: 80%;
+  max-width: 400px;
+}
