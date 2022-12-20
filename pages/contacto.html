@@ -115,7 +115,7 @@
         <section class="container-lg d-flex justify-content-center">
           <div class="w-form-contact">  
                 <div>
-                   <form class="shadow bg-light bg-opacity-50" id="formContacto">
+                   <form class="shadow bg-light bg-opacity-50" id="formContacto" action="correo.php" method="POST">
                      <div class="py-5 px-2">                 
                        <h3 class="fw-bolder text-primary text-center logo border-bottom">Contactanos</h3>
                        <div class="mb-1">
@@ -129,7 +129,8 @@
                            name="name"
                            class="form-control"
                            placeholder="Perez Ariel"
-                           maxlength="20"
+                           maxlength="22"
+                           required
                          />
                        </div>
                        <div class="mb-3">
@@ -141,7 +142,8 @@
                            id="email"
                            name="email"
                            class="form-control"
-                           placeholder="Perez_Ariel@example.com"   
+                           placeholder="Perez_Ariel@example.com"  
+                           required 
                          />
                        </div>
                        <div class="mb-3">
@@ -151,11 +153,12 @@
                            id="textarea"
                            placeholder="Escribe tu consulta"
                            maxlength="200"
+                           required
                          ></textarea>
                        </div>
                        <div class="d-flex flex-column">
                          <button type="submit" class="btn btn-primary m-auto">Enviar</button>
-                          <p class="warning" id="warning"></p>
+                          <p class="warning w-75" id="warning"></p>
                         </div>
                      </div>
                    </form>
