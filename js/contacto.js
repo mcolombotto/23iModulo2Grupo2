@@ -32,7 +32,7 @@ form.addEventListener("submit", e=>{
             width: 600,
             padding: '3em',
             color: '#716add',
-            background: '#fff url(/images/trees.png)',
+            background: '#fff',
             backdrop: `
     rgba(0,0,123,0.4)
     url("https://ouch-cdn2.icons8.com/uKHtopmZTy7WgEsMrAtAs0I7kxCr7zVz3kNLr-CGPQc/rs:fit:256:256/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvMzI1/Lzg2ZTc5MWQxLTYz/NDYtNDI5MC05Mjlj/LTk3NjBmMzM5MDYy/Ny5zdmc.png")
