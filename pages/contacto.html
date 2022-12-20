@@ -114,21 +114,20 @@
     
         <section class="container-lg d-flex justify-content-center">
           <div class="w-75">  
-                <div id="form-contacto" >
-                   <form class="shadow bg-light bg-opacity-50">
+                <div>
+                   <form class="shadow bg-light bg-opacity-50" id="formContacto">
                      <div class="p-5">
                        <div class="mb-1">
-                         <label for="nombre" class="form-label"
+                         <label for="name" class="form-label"
                            >Ingresa tu nombre completo
                            <span class="text-danger">*</span></label
                          >
                          <input
                            type="text"
-                           id="nombre"
+                           id="name"
                            class="form-control"
-                          
                            placeholder="Perez Ariel"
-                           maxlength="15"
+                           maxlength="20"
                          />
                        </div>
                        <div class="mb-3">
@@ -139,19 +138,20 @@
                            type="email" 
                            id="email"
                            class="form-control"
-                           placeholder="Perez_Ariel@example.com"
-                           
+                           placeholder="Perez_Ariel@example.com"   
                          />
                        </div>
                        <div class="mb-3">
                          <textarea
                            class="w-100 form-control"
                            name="consulta"
+                           id="textarea"
                            placeholder="Escribe tu consulta"
                            maxlength="200"
                          ></textarea>
                        </div>
                        <button type="submit" class="btn btn-primary">Enviar</button>
+                       <p class="warning" id="warning"></p>
                      </div>
                    </form>
 
@@ -264,5 +264,6 @@
       </div>
     </footer>
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/contacto.js"></script>
 </body>
 </html>
