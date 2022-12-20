@@ -46,6 +46,9 @@
     font-weight: lighter;
      letter-spacing: 1px;
   }
+  .w-form-contact{
+    width: 50%;
+  }
   .warning{
     width: 200px;
     text-align: center;
@@ -109,6 +112,9 @@ filter: contrast(102%);
  background-color: #050b18!important;
  margin-left: 0;
     margin-right: 0;
+  }
+  .w-form-contact{
+    width: 100%;
   }
   .backgroundContacto{
 /*     background: rgb(53,5,112);
