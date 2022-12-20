@@ -28,7 +28,7 @@
      letter-spacing: 1px;
 }
   main{
-  padding-top: 126px;
+  padding-top: 114px;
 }
 .imagen-avatar{
     background-image: url(https://p4.wallpaperbetter.com/wallpaper/970/460/972/avatar-2-2015-avatar-2-pandora-poster-wallpaper-preview.jpg);
@@ -61,9 +61,18 @@
   font-weight: lighter;
   letter-spacing: 1px;
 }
-
+.size-title-nosotros{
+  font-weight: bold;
+  font-size: -webkit-xxx-large;
+}
 /* css de la pagina acerca de nosotros */
-
+.bg-article{
+  
+  background: url(https://www.shutterstock.com/image-vector/cinema-blue-background-3d-realistic-600w-775574110.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
 .letter-first::first-letter {
   font-size: 280%;
   font-style: italic;
