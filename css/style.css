@@ -67,7 +67,6 @@
 }
 /* css de la pagina acerca de nosotros */
 .bg-article{
-  
   background: url(https://www.shutterstock.com/image-vector/cinema-blue-background-3d-realistic-600w-775574110.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -88,6 +87,10 @@
 }
 
 /* css de las imagenes  del equipo seccion nosotros*/
+#navbar-bg-nosotros{
+  background: radial-gradient(circle, rgba(5,5,112,1) 7%, rgba(3,3,40,1) 96%);
+
+}
 .width-img-yuli{
   width: 67%;
 }
@@ -147,11 +150,26 @@ filter: contrast(102%);
     display: none;
 }
 }  
+/* inicio del media query de nosotros */
+@media all and (min-width:50px) and (max-width: 575px) {
+.bg-article{
+  background: url("https://hbomax-images.warnermediacdn.com/module-assets/gradient2.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+}
+/* inicio del media query de contacto*/
 
-/* inicio del media query de contacto 
-
- @media all and (min-width:50px) and (max-width: 992px) {
-
+ @media all and (min-width:50px) and (max-width: 575px) {
+.size-title-nosotros{
+  font-weight: bold;
+  font-size: x-large;
+}
+.contenedor-img-equipo{
+   overflow: hidden;
+   width: 110%!important;
+}
   .backgroundContacto{
     background: rgb(53,5,112);
     background: radial-gradient(circle, rgb(17, 2, 57) 7%, rgb(3, 3, 35) 96%);
@@ -160,7 +178,7 @@ filter: contrast(102%);
     font-weight: lighter;
      letter-spacing: 1px;
   }
-} */
+} 
 
 /* inicio de media query del footer */
  @media all and (min-width:50px) and (max-width: 576px) {
@@ -177,11 +195,9 @@ filter: contrast(102%);
 
 .justify-icon-footer{
   justify-content: space-around;
-
  } 
  
 } 
-
 
  @media all and (min-width:375px) and (max-width: 765px) {
   .padding-icons{ padding: 1em; 
