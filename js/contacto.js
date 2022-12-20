@@ -28,7 +28,7 @@ form.addEventListener("submit", e=>{
     }else{
         Swal.fire({
             title: "Enviado👌",
-            width: 600,
+            width: 550,
             padding: '3em',
             color: '#716add',
             background: '#fff',

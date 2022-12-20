@@ -104,11 +104,16 @@ filter: contrast(102%);
 
 /* inicio del media query de contacto*/
 
- @media all and (min-width:50px) and (max-width:892px) {
-
+ @media all and (min-width:50px) and (max-width:700px) {
+  .margin_x_subtitle{
+ background-color: #050b18!important;
+ margin-left: 0;
+    margin-right: 0;
+  }
   .backgroundContacto{
-    background: rgb(53,5,112);
-    background: radial-gradient(circle, rgb(17, 2, 57) 7%, rgb(3, 3, 35) 96%);
+/*     background: rgb(53,5,112);
+    background: radial-gradient(circle, rgb(17, 2, 57) 7%, rgb(3, 3, 35) 96%); */
+    background: url("https://hbomax-images.warnermediacdn.com/module-assets/gradient2.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com");
     color:white;
     font-family: 'Signika', sans-serif;
     font-weight: lighter;
