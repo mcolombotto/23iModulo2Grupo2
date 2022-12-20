@@ -24,19 +24,67 @@
 main {
   padding-top: 126px;
 }
-.imagen-avatar {
-  /*background-image: url(https://p4.wallpaperbetter.com/wallpaper/970/460/972/avatar-2-2015-avatar-2-pandora-poster-wallpaper-preview.jpg);*/
-  height: 1000px;
-  width: 100%;
-  filter: brightness(40%);
-  object-fit: cover;
+.width-logo-img{
+  width: 11%;
+}
+
+main{
+padding-top: 126px;
+}
+
+/*inicio del css de el archivo 404 */
+#navbarError404{
+background: radial-gradient(circle, rgba(5,5,112,1) 7%, rgba(3,3,40,1) 96%);
+
+}
+/* #navbarError404:hover{
+} */
+#paginaError{
+height: 625px;
+position: relative;
+}
+#paginaError:hover{
+filter: contrast(4.5);
+}
+
+
+.letter-size{
+font-size: calc(1.625rem + 4.5vw);
+font-family: 'Signika', sans-serif;
+}
+.text-position{
+  top: 224px;
+  left: 507px;
+}
+.picture-error{
+object-fit: cover;
+height: 473px;
+}
+/*inicio del css del footer */
+
+.bg-new-foorter{
+background: linear-gradient(90deg, #161718 3%, #1f2328 24%, #050b18 73%);
+}
+
+.logo_footer{
+filter:drop-shadow(23px 23px
+      48px #0d6efd);
+  text-decoration: none;    
+}
+
+/* hovers del footer */
+.logo_footer:hover{  
+filter: contrast(102%);
+} 
+
+.link_hover:hover{
+font-weight: bold;
+color: white;
 }
 
 /*inicio del css del footer */
 
-.bg-new-foorter {
-  background: linear-gradient(90deg, #161718 3%, #1f2328 24%, #050b18 73%);
-}
+
 
 .logo_footer {
   filter: drop-shadow(23px 23px 48px #0d6efd);
@@ -106,6 +154,7 @@ main {
     width: 75% !important;
   }
 
+
   .controles {
     height: 100% !important;
     object-fit: cover;
@@ -125,7 +174,6 @@ main {
   .card-img-top {
     height: auto !important;
   }
-
   .movieHidden {
     display: none !important;
   }
@@ -249,7 +297,49 @@ th {
 diseño 1
 background: linear-gradient(90deg, #141619 0%, #1b1f22 27%, #0a1424 63%);
 diseño  2
-ackground: linear-gradient(90deg, #161718 3%, #1f2328 24%, #050b18 73%);
+background: linear-gradient(90deg, #161718 3%, #1f2328 24%, #050b18 73%);
 }
 
 */
+
+/* inicio de media query del archivo 404*/
+ @media all and (min-width:620px) and (max-width: 861px) {
+.letter-size{
+  font-size: calc(1.625rem + 2.5vw);
+  font-family: 'Signika', sans-serif;
+}
+.text-position{
+    top: 118px;
+    left: 30px;
+}
+}
+
+ @media all and (min-width:400px) and (max-width: 620px) {
+.letter-size{
+  font-size: calc(1rem + 1.5vw);
+  font-family: 'Signika', sans-serif;
+}
+.text-position{
+    top: 118px;
+    left: 55px;
+}
+}
+ @media all and (min-width:50px) and (max-width: 400px) {
+.letter-size{
+  font-size: calc(1rem + 1vw);
+  font-family: 'Signika', sans-serif;
+}
+.text-position{
+    top: 118px;
+    left: 5px;
+  }
+#paginaError{
+  height: 525px;
+  position: relative;
+}
+  .picture-error{
+  object-fit: cover;
+  height: 370px;
+  width: auto;
+}
+}
