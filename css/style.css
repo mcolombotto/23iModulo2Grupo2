@@ -36,6 +36,10 @@
     height: 500px;
 }
 /*inicio del css de el archivo 404 */
+#navbarError404{
+  background: radial-gradient(circle, rgba(5,5,112,1) 7%, rgba(3,3,40,1) 96%);
+
+}
 #paginaError{
   height: 625px;
   position: relative;
@@ -89,27 +93,27 @@ filter: contrast(102%);
 }
 }
 
- @media all and (min-width:300px) and (max-width: 618px) {
+ @media all and (min-width:400px) and (max-width: 618px) {
 .letter-size{
   font-size: calc(1rem + 1.5vw);
   font-family: 'Signika', sans-serif;
 }
 .text-position{
     top: 118px;
-    left: 40px;
+    left: 55px;
 }
 }
- @media all and (min-width:50px) and (max-width: 300px) {
+ @media all and (min-width:50px) and (max-width: 400px) {
 .letter-size{
-  font-size: calc(1rem + 1.5vw);
+  font-size: calc(1rem + 1vw);
   font-family: 'Signika', sans-serif;
 }
 .text-position{
     top: 118px;
-    left: 0px;
+    left: 5px;
   }
 #paginaError{
-  height: 425px;
+  height: 525px;
   position: relative;
 }
   .picture-error{
@@ -163,12 +167,3 @@ filter: contrast(102%);
   .padding-icons{ padding: 1em; 
   }
 }
-
-/*
-diseño 1
-background: linear-gradient(90deg, #141619 0%, #1b1f22 27%, #0a1424 63%);
-diseño  2
-ackground: linear-gradient(90deg, #161718 3%, #1f2328 24%, #050b18 73%);
-}
-
-*/
