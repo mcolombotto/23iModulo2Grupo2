@@ -11,8 +11,8 @@ const secretKey = '3ae885b76255f2259705f22d3579099c'
     debugger;
     const myHeaders = {
         "Content-Type": "application/json",
-        'Authorization': 'Basic ' + btoa(`${apiKey}:${secretKey}`),
-        'Access-Control-Allow-Origin': 'http://127.0.0.1:5500/pages/contacto.html',
+        'Authorization': 'Basic' + btoa(`${apiKey}:${secretKey}`),
+        'Access-Control-Allow-Origin': 'http://127.0.0.1:5500/',
         'Access-Control-Allow-Methods': "GET, PUT, POST, DELETE, HEAD, OPTIONS"
     };
 
@@ -24,26 +24,6 @@ const secretKey = '3ae885b76255f2259705f22d3579099c'
             "TextPart": message
         }]
     }); 
-
-   /* const data = {
-        "Messages": [
-            {
-                "From": {
-                    "Email": "pilot@mailjet.com",
-                    "Name": "Mailjet Pilot"
-                },
-                "To": [
-                    {
-                        "Email": "yulianamallorga@gmail.com",
-                        "Name": "passenger 1"
-                    }
-                ],
-                "Subject": "Your email flight plan!",
-                "TextPart": "Dear passenger 1, welcome to Mailjet! May the delivery force be with you!",
-                "HTMLPart": "<h3>Dear passenger 1, welcome to <a href=\"https://www.mailjet.com/\">Mailjet</a>!<br />May the delivery force be with you!",
-            }
-        ]
-    } */
 
     const requestOptions = {
         method: 'POST',
