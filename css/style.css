@@ -37,7 +37,7 @@
 }
 /*inicio del css de el archivo 404 */
 #paginaError{
-  height: 600px;
+  height: 625px;
   position: relative;
 }
 .letter-size{
@@ -73,6 +73,50 @@ filter: contrast(102%);
   font-weight: bold;
   color: white;
    
+}
+
+
+
+/* inicio de media query del archivo 404*/
+ @media all and (min-width:618px) and (max-width: 861px) {
+.letter-size{
+  font-size: calc(1.625rem + 2.5vw);
+  font-family: 'Signika', sans-serif;
+}
+.text-position{
+    top: 118px;
+    left: 30px;
+}
+}
+
+ @media all and (min-width:300px) and (max-width: 618px) {
+.letter-size{
+  font-size: calc(1rem + 1.5vw);
+  font-family: 'Signika', sans-serif;
+}
+.text-position{
+    top: 118px;
+    left: 40px;
+}
+}
+ @media all and (min-width:50px) and (max-width: 300px) {
+.letter-size{
+  font-size: calc(1rem + 1.5vw);
+  font-family: 'Signika', sans-serif;
+}
+.text-position{
+    top: 118px;
+    left: 0px;
+  }
+#paginaError{
+  height: 425px;
+  position: relative;
+}
+  .picture-error{
+  object-fit: cover;
+  height: 371px;
+  width: auto;
+}
 }
 /* inicio de media query del navbar y body */
  @media all and (max-width: 993px) {
