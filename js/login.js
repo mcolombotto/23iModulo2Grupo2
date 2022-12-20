@@ -42,7 +42,7 @@ function ingresoUsuario(e) {
     localStorage.setItem("usuarioAdmin", JSON.stringify(usuarioAdmin));
     sessionStorage.setItem("usuarioActivo", JSON.stringify(usuarioAdmin));
     window.setTimeout(function () {
-      window.location.replace(`admin.html`);
+      window.location.replace(`../admin.html`);
     }, 2000);
     return;
   } else {

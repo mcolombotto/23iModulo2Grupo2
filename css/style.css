@@ -30,44 +30,67 @@
 }
 
 main {
-  padding-top: 126px;
+  padding-top: 116px;
 }
 
-.width-logo-img{
+.width-logo-img {
   width: 11%;
 }
 
-main{
-padding-top: 126px;
+/*inicio del css de contacto */
+#bg-contacto-navbar {
+  background: radial-gradient(
+    circle,
+    rgba(5, 5, 112, 1) 7%,
+    rgba(3, 3, 40, 1) 96%
+  );
+}
+.heading-title {
+  font-family: "Rubik Spray Paint", cursiva;
+  padding-bottom: 5px;
+  font-size: x-large;
+}
+
+.backgroundContacto {
+  background-image: url(https://p4.wallpaperbetter.com/wallpaper/315/481/104/avatar-2-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  color: #050b18;
 }
 
 /*inicio del css de el archivo 404 */
-#navbarError404{
-background: radial-gradient(circle, rgba(5,5,112,1) 7%, rgba(3,3,40,1) 96%);
 
+#navbarError404 {
+  background: radial-gradient(
+    circle,
+    rgba(5, 5, 112, 1) 7%,
+    rgba(3, 3, 40, 1) 96%
+  );
 }
+
 /* #navbarError404:hover{
 } */
-#paginaError{
-height: 625px;
-position: relative;
+#paginaError {
+  height: 625px;
+  position: relative;
 }
-#paginaError:hover{
-filter: contrast(4.5);
+#paginaError:hover {
+  filter: contrast(4.5);
 }
 
-
-.letter-size{
-font-size: calc(1.625rem + 4.5vw);
-font-family: 'Signika', sans-serif;
+.letter-size {
+  font-size: calc(1.625rem + 4.5vw);
+  font-family: "Signika", sans-serif;
 }
-.text-position{
+.text-position {
   top: 224px;
   left: 507px;
 }
-.picture-error{
-object-fit: cover;
-height: 473px;
+.picture-error {
+  object-fit: cover;
+  height: 473px;
+}
 
 .imagen-avatar {
   height: 1000px;
@@ -107,31 +130,97 @@ height: 473px;
   height: 473px;
 }
 
+/* css de las imagenes  del equipo seccion nosotros*/
+#navbar-bg-nosotros {
+  background: radial-gradient(
+    circle,
+    rgba(5, 5, 112, 1) 7%,
+    rgba(3, 3, 40, 1) 96%
+  );
+}
+.width-img-yuli {
+  width: 67%;
+}
+.width-img-paul {
+  width: 70%;
+}
+.img-wrapper-equipo:hover .imagen-filter {
+  filter: contrast(100%);
+}
+.card-wrapper:hover .imagen-filter {
+  filter: contrast(100%);
+  scale: 1.1;
+}
+.contenedor-img {
+  overflow: hidden;
+}
+.imagen-filter {
+  transition: all 0.5s;
+  filter: brightness(38%);
+}
+
+/*inicio del css de el archivo nosotros */
+.backgroundNosotros{
+  background: radial-gradient(circle, rgba(5,5,112,1) 7%, rgba(3,3,40,1) 96%);
+  font-family: 'Signika', sans-serif;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+.size-title-nosotros{
+  font-weight: bold;
+  font-size: -webkit-xxx-large;
+}
+
+.bg-article{
+  background: url(https://www.shutterstock.com/image-vector/cinema-blue-background-3d-realistic-600w-775574110.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.letter-first::first-letter {
+  font-size: 280%;
+  font-style: italic;
+  background-color: rgba(193, 202, 209, 0.882);
+  color: #3809f3;
+  letter-spacing: 3px;
+  margin-left: 20px;
+}
+
+.space-letter::first-letter{
+   font-size: 200%;
+  margin-left: 20px;
+}
+
+#navbar-bg-nosotros{
+  background: radial-gradient(circle, rgba(5,5,112,1) 7%, rgba(3,3,40,1) 96%);
+
+}
+.width-img-yuli{
+  width: 67%;
+}
+.width-img-paul{
+  width: 70%;
+}
+.img-wrapper-equipo:hover .imagen-filter{
+  filter: contrast(100%);
+}
+.card-wrapper:hover .imagen-filter {
+  filter: contrast(100%);
+  scale: 1.1;
+}
+.contenedor-img{
+   overflow: hidden;
+}
+.imagen-filter{
+  transition: all 0.5s;
+  filter: brightness(38%);
+}
+
 /*inicio del css del footer */
 
-.bg-new-foorter{
-background: linear-gradient(90deg, #161718 3%, #1f2328 24%, #050b18 73%);
+.bg-new-foorter {
+  background: linear-gradient(90deg, #161718 3%, #1f2328 24%, #050b18 73%);
 }
-
-.logo_footer{
-filter:drop-shadow(23px 23px
-      48px #0d6efd);
-  text-decoration: none;    
-}
-
-/* hovers del footer */
-.logo_footer:hover{  
-filter: contrast(102%);
-} 
-
-.link_hover:hover{
-font-weight: bold;
-color: white;
-}
-
-/*inicio del css del footer */
-
-
 
 .logo_footer {
   filter: drop-shadow(23px 23px 48px #0d6efd);
@@ -146,6 +235,43 @@ color: white;
 .link_hover:hover {
   font-weight: bold;
   color: white;
+}
+
+/*inicio del css del footer */
+
+.logo_footer {
+  filter: drop-shadow(23px 23px 48px #0d6efd);
+  text-decoration: none;
+}
+
+/* hovers del footer */
+.logo_footer:hover {
+  filter: contrast(102%);
+}
+
+.link_hover:hover {
+  font-weight: bold;
+  color: white;
+}
+
+/* inicio del media query de contacto*/
+
+@media all and (min-width: 50px) and (max-width: 700px) {
+  .margin_x_subtitle {
+    background-color: #050b18 !important;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .w-form-contact {
+    width: 100%;
+  }
+  .backgroundContacto {
+    background: url("https://hbomax-images.warnermediacdn.com/module-assets/gradient2.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com");
+    color: white;
+    font-family: "Signika", sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1px;
+  }
 }
 
 /* inicio de media query del archivo 404*/
@@ -190,6 +316,7 @@ color: white;
     width: auto;
   }
 }
+
 /* inicio de media query del navbar y body */
 @media all and (max-width: 993px) {
   .bg-new {
@@ -199,12 +326,19 @@ color: white;
       rgba(3, 3, 40, 1) 96%
     );
   }
-  .backgroundIndex {
-    background-image: url(https://p4.wallpaperbetter.com/wallpaper/970/460/972/avatar-2-2015-avatar-2-pandora-poster-wallpaper-preview.jpg);
-  }
 
   .width-logo-img {
     width: 20%;
+  }
+}
+
+/* inicio del media query de nosotros */
+@media all and (min-width: 50px) and (max-width: 575px) {
+  .bg-article {
+    background: url("https://hbomax-images.warnermediacdn.com/module-assets/gradient2.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   }
 }
 
@@ -233,7 +367,7 @@ color: white;
 
 @media all and (max-width: 576px) {
   .summary {
-    display: none ;
+    display: none;
   }
   .buttonsSmall {
     display: block !important;
@@ -244,8 +378,10 @@ color: white;
   }
   .summaryDetail {
     text-align: left;
-    width: 90%!important;
-    font-size: x-small!important;
+    width: 90% !important;
+    font-size: x-small !important;
+  }
+}
 
 @media all and (min-width: 375px) and (max-width: 765px) {
   .padding-icons {
@@ -274,8 +410,7 @@ color: white;
   }
 
   .summary {
-
-    font-size: small!important;
+    font-size: small !important;
     width: 75% !important;
   }
 
@@ -315,13 +450,10 @@ color: white;
   }
 
   table {
-    display: none!important;
+    display: none !important;
   }
   .summaryDetail {
-  
-    width: 75%!important;
-   
-
+    width: 75% !important;
   }
 }
 
@@ -330,14 +462,12 @@ color: white;
     padding: 1em;
   }
 
-  .titleMovie{
-    font-size: large!important;
-    
+  .titleMovie {
+    font-size: large !important;
   }
-  .icons{
-    display:none;
+  .icons {
+    display: none;
   }
-
 }
 
 .movie {
@@ -420,7 +550,6 @@ color: white;
   height: 175px;
 }
 
-
 .icons {
   text-align: left;
   font-size: large;
@@ -437,54 +566,53 @@ th {
   width: 15%;
 }
 
-.brillo{
+.brillo {
   filter: brightness(30%);
 }
 
 /* inicio de media query del archivo 404*/
- @media all and (min-width:620px) and (max-width: 861px) {
-.letter-size{
-  font-size: calc(1.625rem + 2.5vw);
-  font-family: 'Signika', sans-serif;
-}
-.text-position{
+@media all and (min-width: 620px) and (max-width: 861px) {
+  .letter-size {
+    font-size: calc(1.625rem + 2.5vw);
+    font-family: "Signika", sans-serif;
+  }
+  .text-position {
     top: 118px;
     left: 30px;
-}
+  }
 }
 
- @media all and (min-width:400px) and (max-width: 620px) {
-.letter-size{
-  font-size: calc(1rem + 1.5vw);
-  font-family: 'Signika', sans-serif;
-}
-.text-position{
+@media all and (min-width: 400px) and (max-width: 620px) {
+  .letter-size {
+    font-size: calc(1rem + 1.5vw);
+    font-family: "Signika", sans-serif;
+  }
+  .text-position {
     top: 118px;
     left: 55px;
+  }
 }
-}
- @media all and (min-width:50px) and (max-width: 400px) {
-.letter-size{
-  font-size: calc(1rem + 1vw);
-  font-family: 'Signika', sans-serif;
-}
-.text-position{
+@media all and (min-width: 50px) and (max-width: 400px) {
+  .letter-size {
+    font-size: calc(1rem + 1vw);
+    font-family: "Signika", sans-serif;
+  }
+  .text-position {
     top: 118px;
     left: 5px;
   }
-#paginaError{
-  height: 525px;
-  position: relative;
+  #paginaError {
+    height: 525px;
+    position: relative;
+  }
+  .picture-error {
+    object-fit: cover;
+    height: 370px;
+    width: auto;
+  }
 }
-  .picture-error{
-  object-fit: cover;
-  height: 370px;
-  width: auto;
-}
-}
-.titleMovie{
-  text-align:left;
-  
+.titleMovie {
+  text-align: left;
 }
 .movieTitleDetail {
   position: absolute;
@@ -494,16 +622,17 @@ th {
 .summaryDetail {
   text-align: left;
   width: 50%;
-  font-size: large ;
+  font-size: large;
+}
 
-.containerLogin{
+.containerLogin {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.formLogin{
+.formLogin {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -515,7 +644,7 @@ th {
   width: 100%;
 }
 
-.containerRegistro{
+.containerRegistro {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -526,7 +655,7 @@ th {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center
+  justify-content: center;
   width: 100%;
 }
 
