@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="proyecto modulo 2 grupo 2 - comis. 23i - pagina web pelis-series"
+    />
+    <meta
+      name="keywords"
+      content="js, javascript, proyect, movies, series, website"
+    />
+    <meta
+      name="author"
+      content="Yuliana Mallorga, Mariano Colombotto, Luciano Danert, Paul Teves"
+    />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Filmax</title>
+    <script
+      src="https://kit.fontawesome.com/2e18571cb0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="backgroundIndex">
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-new">
+        <div class="container">
+          <a class="navbar-brand logo" href="/index.html"> Filmax </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#barranavegacion"
+            aria-controls="barranavegacion"
+            aria-expanded="true"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse menuItems" id="barranavegacion">
+            <ul class="navbar-nav ms-auto navbar-nav-scroll navbar-navegacion">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="/index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fuente" href="/pages/contacto.html"
+                  >Contacto</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/nosotros.html">Acerca de</a>
+              </li>
+            </ul>
+
+            <button type="button" class="btn btn-dark m-lg-2">
+              <a class="nav-link active" aria-current="page" href="/pages/login.html">Login</a>
+            </button>
+            <button type="button" class="btn btn-primary m-lg-2">
+              <a class="nav-link" href="/pages/registro.html">Regístrate</a>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="containerLogin">
+      <section class="py-3">
+        <h1 class="display-4 text-center text-primary">INICIO DE SESIÓN</h1>
+      </section>
+      <form class="formLogin mt-5">
+        <div class="form-outline mb-4">
+          <input
+            type="email"
+            id="emailLogin"
+            class="form-control"
+            name="emailLogin"
+            placeholder="Ingresa tu email"
+            required
+          />
+          <label
+            class="form-label text-secondary fw-bold fs-6 ms-2 mt-2"
+            for="emailLogin"
+            >Dirección de email</label
+          >
+        </div>
+        <div class="form-outline mb-2">
+          <input
+            type="password"
+            id="contraseñaLogin"
+            class="form-control"
+            name="contraseñaLogin"
+            placeholder="Ingresa tu contraseña"
+            required
+          />
+          <label
+            class="form-label text-secondary fw-bold fs-6 ms-2 mt-2"
+            for="contraseñaLogin"
+            >Contraseña</label
+          >
+        </div>
+        <button
+          type="submit"
+          class="btn btn-primary btn-lg btn-block mt-3 mb-4"
+          id="btnIniciarSesion"
+        >
+          Iniciar sesión</button
+        ><button
+          type="submit"
+          class="btn btn-secondary btn-block mb-5"
+          id="btnRecuperarContraseña"
+        >
+          ¿Olvidaste tu contraseña?
+        </button>
+        <div id="ingresoErrorAdmin"></div>
+        <div class="text-center">
+          <p class="text-secondary">
+            ¿No tienes cuenta aún?
+            <a href="/pages/registro.html" class="text-decoration-none"
+              >Regístrate</a
+            >
+          </p>
+        </div>
+      </form>
+    </main>
+    <footer class="container-fluid bg-new-foorter text-secondary">
+      <div class="container pt-2">
+        <div class="box-footer text-sm-center menuItems">
+          <div class="row mt-2">
+            <div class="col-lg-4 col-md-3 col-sm-6 px-1 text-sm-center p-sm-0">
+              <a
+                href="/index.html "
+                class="nav-item logo_footer logo text-light text-light"
+              >
+                Filmax
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-3 col-sm-6 text-sm-center p-sm-0">
+              <ul class="list-unstyled">
+                <li class="nav-item"><h6 class="text-light">Navegación</h6></li>
+                <li class="nav-item">
+                  <a
+                    aria-current="page"
+                    class="nav-link link_hover active"
+                    href="/index.html"
+                    >Inicio</a
+                  >
+                </li>
+
+                <li class="nav-item link_hover">
+                  <a class="nav-link link_hover" href="/pages/contacto.html"
+                    >Contacto</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link link_hover" href="/pages/nosotros.html"
+                    >Acerca de</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link link_hover" href="/pages/login.html"
+                    >Login</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 px-sm-3 pb-2 mt-md-3">
+              <div>
+                <h6
+                  class="text-light text-lg-center mb-3 px-md-5 ps-xs-3 px-lg-0"
+                >
+                  Seguinos en nuestras redes sociales
+                </h6>
+                <div
+                  class="padding-icons display-flex px-lg-0 d-flex flex-row -justify-content-lg-around justify-content-md-around justify-content-sm-around"
+                >
+                  <a
+                    href="https://discord.com/channels/@me"
+                    target="_blank"
+                    class="text-secondary btn btn-outline-primary"
+                  >
+                    <i class="fa-brands fa-discord p-1 mt-1 fs-2"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    class="text-secondary btn btn-outline-primary"
+                  >
+                    <i class="fa-brands fa-facebook p-1 mt-1 fs-2"></i> </a
+                  ><a
+                    href="https://www.twitter.com/"
+                    target="_blank"
+                    id="center-instagram"
+                    class="text-secondary btn btn-outline-primary"
+                  >
+                    <i
+                      class="justify-content-lg-center fa-brands fa-square-twitter p-1 mt-1 fs-2"
+                    ></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    class="text-secondary btn btn-outline-primary"
+                  >
+                    <i class="fa-brands fa-square-instagram p-1 mt-1 fs-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 px-1 text-center p-sm-0 lead">
+              <hr />
+              <p>
+                © 2022 Todos los derechos reservados. Filmax se usa bajo
+                licencia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/login.js" type="module"></script>
+  </body>
+</html>

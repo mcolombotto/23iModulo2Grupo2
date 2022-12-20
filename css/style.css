@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Spray+Paint&display=swap");
-@import url(https://fonts.googleapis.com/css2?family=Signika:wght@100;200;300;400;500;600;700&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@100;200;300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -8,7 +8,11 @@
 }
 /* color de fondo de la pàgina en general */
 .backgroundIndex {
-  background: rgb(29, 29, 45);
+  background: radial-gradient(
+    circle,
+    rgba(5, 5, 112, 1) 7%,
+    rgba(3, 3, 40, 1) 96%
+  );
   font-family: "Roboto", sans-serif;
 }
 .logo {
@@ -16,14 +20,19 @@
   font-size: -webkit-xxx-large;
   letter-spacing: 1px;
 }
+.width-logo-img {
+  width: 11%;
+}
 .menuItems {
   font-family: "Signika", sans-serif;
   font-weight: lighter;
   letter-spacing: 1px;
 }
+
 main {
   padding-top: 126px;
 }
+
 .width-logo-img{
   width: 11%;
 }
@@ -59,7 +68,45 @@ font-family: 'Signika', sans-serif;
 .picture-error{
 object-fit: cover;
 height: 473px;
+
+.imagen-avatar {
+  height: 1000px;
+  width: 100%;
+  filter: brightness(40%);
+  object-fit: cover;
 }
+
+/*inicio del css de el archivo 404 */
+#navbarError404 {
+  background: radial-gradient(
+    circle,
+    rgba(5, 5, 112, 1) 7%,
+    rgba(3, 3, 40, 1) 96%
+  );
+}
+/* #navbarError404:hover{
+} */
+#paginaError {
+  height: 625px;
+  position: relative;
+}
+#paginaError:hover {
+  filter: contrast(4.5);
+}
+
+.letter-size {
+  font-size: calc(1.625rem + 4.5vw);
+  font-family: "Signika", sans-serif;
+}
+.text-position {
+  top: 224px;
+  left: 507px;
+}
+.picture-error {
+  object-fit: cover;
+  height: 473px;
+}
+
 /*inicio del css del footer */
 
 .bg-new-foorter{
@@ -100,17 +147,72 @@ color: white;
   font-weight: bold;
   color: white;
 }
+
+/* inicio de media query del archivo 404*/
+@media all and (min-width: 620px) and (max-width: 861px) {
+  .letter-size {
+    font-size: calc(1.625rem + 2.5vw);
+    font-family: "Signika", sans-serif;
+  }
+  .text-position {
+    top: 118px;
+    left: 30px;
+  }
+}
+
+@media all and (min-width: 400px) and (max-width: 620px) {
+  .letter-size {
+    font-size: calc(1rem + 1.5vw);
+    font-family: "Signika", sans-serif;
+  }
+  .text-position {
+    top: 118px;
+    left: 55px;
+  }
+}
+
+@media all and (min-width: 50px) and (max-width: 400px) {
+  .letter-size {
+    font-size: calc(1rem + 1vw);
+    font-family: "Signika", sans-serif;
+  }
+  .text-position {
+    top: 118px;
+    left: 5px;
+  }
+  #paginaError {
+    height: 525px;
+    position: relative;
+  }
+  .picture-error {
+    object-fit: cover;
+    height: 370px;
+    width: auto;
+  }
+}
 /* inicio de media query del navbar y body */
 @media all and (max-width: 993px) {
   .bg-new {
     background: radial-gradient(
       circle,
-      rgb(5, 5, 65) 7%,
+      rgba(5, 5, 112, 1) 7%,
       rgba(3, 3, 40, 1) 96%
     );
   }
+  .backgroundIndex {
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/970/460/972/avatar-2-2015-avatar-2-pandora-poster-wallpaper-preview.jpg);
+  }
+
+  .width-logo-img {
+    width: 20%;
+  }
 }
 
+@media all and (max-width: 768px) {
+  .width-logo-img {
+    display: none;
+  }
+}
 /* inicio de media query del footer */
 @media all and (min-width: 50px) and (max-width: 576px) {
   .box-footer {
@@ -144,6 +246,22 @@ color: white;
     text-align: left;
     width: 90%!important;
     font-size: x-small!important;
+
+@media all and (min-width: 375px) and (max-width: 765px) {
+  .padding-icons {
+    padding: 1em;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .summary {
+    display: none !important;
+  }
+  .buttonsSmall {
+    display: block !important;
+  }
+  .buttons {
+    display: none !important;
   }
 }
 
@@ -156,10 +274,10 @@ color: white;
   }
 
   .summary {
+
     font-size: small!important;
     width: 75% !important;
   }
-
 
   .controles {
     height: 100% !important;
@@ -168,7 +286,9 @@ color: white;
 
   .movieTitle {
     position: absolute;
+
     top: 30% !important;
+
     left: 10%;
   }
   .movie {
@@ -180,6 +300,7 @@ color: white;
   .card-img-top {
     height: auto !important;
   }
+
   .movieHidden {
     display: none !important;
   }
@@ -200,6 +321,7 @@ color: white;
   
     width: 75%!important;
    
+
   }
 }
 
@@ -207,6 +329,7 @@ color: white;
   .padding-icons {
     padding: 1em;
   }
+
   .titleMovie{
     font-size: large!important;
     
@@ -214,6 +337,7 @@ color: white;
   .icons{
     display:none;
   }
+
 }
 
 .movie {
@@ -296,6 +420,7 @@ color: white;
   height: 175px;
 }
 
+
 .icons {
   text-align: left;
   font-size: large;
@@ -315,14 +440,6 @@ th {
 .brillo{
   filter: brightness(30%);
 }
-/*
-diseño 1
-background: linear-gradient(90deg, #141619 0%, #1b1f22 27%, #0a1424 63%);
-diseño  2
-background: linear-gradient(90deg, #161718 3%, #1f2328 24%, #050b18 73%);
-}
-
-*/
 
 /* inicio de media query del archivo 404*/
  @media all and (min-width:620px) and (max-width: 861px) {
@@ -378,4 +495,52 @@ background: linear-gradient(90deg, #161718 3%, #1f2328 24%, #050b18 73%);
   text-align: left;
   width: 50%;
   font-size: large ;
+
+.containerLogin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formLogin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.formLogin input {
+  width: 100%;
+}
+
+.containerRegistro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formRegistro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center
+  width: 100%;
+}
+
+.formRegistro input {
+  width: 100%;
+}
+
+.formRegistro button {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-outline {
+  width: 80%;
+  max-width: 400px;
 }

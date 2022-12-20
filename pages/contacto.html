@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="proyecto modulo 2 grupo 2 - comis. 23i - pagina web pelis-series">
+    <meta name="keywords" content="js, javascript, proyect, movies, series, website">
+    <meta name="author" content="Yuliana Mallorga, Mariano Colombotto, Luciano Danert, Paul Teves">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/img/movie_logo_favicon.png" type="image/x-icon">
+    <title>Filmax</title>
+       <!-- Iconos de https://fontawesome.com/icons/ -->
+    <script
+      src="https://kit.fontawesome.com/2e18571cb0.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top bg-black bg-opacity-25 navbar-dark" id="bg-contacto-navbar">
+        <div class="container">  
+          <a class="navbar-brand logo w-50 d-flex" href="/index.html">
+            <div class="logo">
+                    Filmax
+                </div> 
+            <figure class="width-logo-img">           
+              <img
+                class="img-fluid"
+                src="/img/movie_logo_favicon.png"
+                alt="Logo del blog"
+              />
+            </figure>    
+            
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#barranavegacion"
+            aria-controls="barranavegacion"
+            aria-expanded="true"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse menuItems" id="barranavegacion">
+            <ul
+              class="navbar-nav navbar-nav-scroll  navbar-navegacion"
+            >
+              <li class="nav-item">
+                <a class="nav-link "  href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fuente active" aria-current="page" href="/pages/contacto.html"
+                  >Contacto</a
+                >
+              </li>
+
+              <li class="nav-item w-50">
+                <a class="nav-link" href="/pages/nosotros.html">Acerca de</a>
+              </li>
+            </ul>
+           
+                 <button type="button" class="btn btn-dark m-lg-2 m-auto">
+                      <a class="nav-link"  href="/pages/login.html"
+                    >Login</a
+                  >
+                </button>
+                <button type="button" class="btn btn-primary m-lg-2">
+                  <a class="nav-link" href="/pages/registro.html">Regístrate</a>
+                </button>
+           
+           
+          </div>
+        </div>
+      </nav>
+    </header>
+     <main class="pb-5 backgroundContacto">
+         <section class="py-3">
+        <h1 class="display-4  fw-bolder text-center">CONTACTO</h1>
+      </section>
+    
+      <section class="container  pb-4">
+        <div class="row mx-3">
+          <div class="col-12">
+            <div class="bg-primary bg-opacity-50 margin_x_subtitle mb-4 ">
+              <h2 class="text-center">Comunicate con nosotros</h2>
+            </div>
+              <div class="card bg-light shadow py-2">
+                   <div>
+                      <div class="row text-center text-primary">
+                        <div class="col-lg-4 col-md-12">                  
+                         <h4 class="card-title comunicate"><i class="fa-brands fa-whatsapp"></i> +540381-156393820</h4>
+                       </div>
+                        <div class="col-lg-4 col-md-12">
+                           
+                         <h4 class="card-title comunicate"> <i class="fa-solid fa-phone"></i> +540381-4611999</h4>
+                       </div>
+                        <div class="col-lg-4 col-md-12 card-wrapper">
+                            
+                         <h4 class="card-title comunicate"> <i class="fa-solid fa-envelope"></i> filmax@gmail.com </h4>
+                       </div>
+                        
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section class="container pt-5 text-center">
+        <h2 class="mb-5">Si deseas contactar con "Filmax" rellena este formulario.</h2>
+      </section>
+    
+        <section class="container-lg d-flex justify-content-center">
+          <div class="w-form-contact">  
+                <div>
+                   <form class="shadow bg-light bg-opacity-50" id="formContacto" action="correo.php" method="POST">
+                     <div class="py-5 px-2">                 
+                       <h3 class="fw-bolder text-primary text-center logo border-bottom">Contactanos</h3>
+                       <div class="mb-1">
+                         <label for="name" class="form-label"
+                           >Ingresa tu nombre completo
+                           <span class="text-danger">*</span></label
+                         >
+                         <input
+                           type="text"
+                           id="name"
+                           name="name"
+                           class="form-control"
+                           placeholder="Perez Ariel"
+                           maxlength="22"
+                           required
+                         />
+                       </div>
+                       <div class="mb-3">
+                         <label for="email" class="form-label"
+                           >Ingresa tu email<span class="text-danger">*</span></label
+                         >
+                         <input
+                           type="email" 
+                           id="email"
+                           name="email"
+                           class="form-control"
+                           placeholder="Perez_Ariel@example.com"  
+                           required 
+                         />
+                       </div>
+                       <div class="mb-3">
+                         <textarea
+                           class="w-100 form-control"
+                           name="message"
+                           id="textarea"
+                           placeholder="Escribe tu consulta"
+                           maxlength="200"
+                           required
+                         ></textarea>
+                       </div>
+                       <div class="d-flex flex-column">
+                         <button type="submit" class="btn btn-primary m-auto">Enviar</button>
+                          <p class="warning w-75" id="warning"></p>
+                        </div>
+                     </div>
+                   </form>
+
+                </div>                     
+           </div>
+        </section>
+      <section class="container my-5">
+        <div class="row">       
+          <article class="col-sm-12 col-md-12 mt-sm-3">
+            <h3 class="mt-md-2 text-center">Te esperamos en nuestras oficinas</h3>
+         <iframe class="w-100 rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.1022202999143!2d-65.2093904858659!3d-26.836700883160447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1671238958741!5m2!1ses-419!2sar" height="350" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </article>
+        </div>
+      </section>
+    </main>
+     <!-- inicio de footer -->
+       <footer class="container-fluid bg-new-foorter text-secondary">
+      <div class="container pt-2">
+        <div class="box-footer text-sm-center menuItems">
+          <div class="row mt-2">
+            <div class="col-lg-4 col-md-3 col-sm-6 px-1 text-sm-center p-sm-0">       
+                <a href="/index.html " class="nav-item logo_footer logo  text-light text-light">
+                 Filmax
+                </a>
+              
+            </div>
+
+            <div class="col-lg-4 col-md-3 col-sm-6 text-sm-center p-sm-0">
+              <ul class="list-unstyled">
+                <li class="nav-item"><h6 class="text-light">Navegación</h6></li>
+                <li class="nav-item">
+                  <a
+                   
+                    class="nav-link link_hover"
+                    href="/index.html"
+                    >Inicio</a
+                  >
+                </li>
+                
+                 <li class="nav-item link_hover">
+                  <a class="nav-link  link_hover active"  aria-current="page" href="/pages/contacto.html"
+                    >Contacto</a
+                  >
+                </li>  
+                
+                <li class="nav-item">
+                  <a class="nav-link link_hover" href="/pages/nosotros.html"
+                    >Acerca de</a
+                  >
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link link_hover" href="/pages/login.html"
+                    >Login</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 px-sm-3 pb-2 mt-md-3">
+              <div>
+                <h6
+                  class="text-light text-lg-center mb-3 px-md-5 ps-xs-3 px-lg-0"
+                >
+                  Seguinos en nuestras redes sociales
+                </h6>
+                <div
+                  class="padding-icons display-flex px-lg-0 d-flex flex-row -justify-content-lg-around justify-content-md-around justify-content-sm-around"
+                >
+                  <a
+                    href="https://discord.com/channels/@me"
+                    target="_blank"
+                    class="text-secondary btn btn-outline-primary"
+                  >
+                    <i class="fa-brands fa-discord p-1 mt-1 fs-2"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    class="text-secondary btn btn-outline-primary"
+                  >
+                    <i class="fa-brands fa-facebook p-1 mt-1 fs-2"></i> </a
+                  ><a
+                    href="https://www.twitter.com/"
+                    target="_blank"
+                    id="center-instagram"
+                    class="text-secondary btn btn-outline-primary"
+                  >
+                    <i
+                      class="justify-content-lg-center fa-brands fa-square-twitter p-1 mt-1 fs-2"
+                    ></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    class="text-secondary btn btn-outline-primary"
+                  >
+                    <i class="fa-brands fa-square-instagram p-1 mt-1 fs-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 px-1 text-center p-sm-0 lead">    
+                <hr>   
+                <p>© 2022 Todos los derechos reservados. Filmax se usa bajo licencia.</p> 
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/contacto.js"></script>
+</body>
+</html>
