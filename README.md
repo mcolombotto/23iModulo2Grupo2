@@ -10,7 +10,7 @@ También permite registrar e ingresar usuario.
 
 [ver Repo](https://github.com/mcolombotto/23iModulo2Grupo2)
 
-[ver Deploy]()
+[ver Deploy](https://proyecto-modulo2-grupo2.netlify.app/)
 
 ***
 
