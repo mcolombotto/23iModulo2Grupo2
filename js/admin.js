@@ -5,7 +5,7 @@ const listaTitulosUI = document.getElementById("listaTitulos");
 const listaCategoriasUI = document.getElementById("categorias");
 let arrayTitulos = [];
 let arrayCategorias = [];
-const urlCategorias= "categorias.json";
+const urlCategorias= "json/categorias.json";
 fnCargarCategorias();
 
 
@@ -66,7 +66,7 @@ const PintarDB = () => {
       texto = "";
       iconPublicado = "";
       if(element.destacado == "n"){
-        texto = ' <i class="material-icons">star</i>';
+        texto = ' <button class="material-icons data-toggle="tooltip" data-placement="top" title="Destacar" on top">star</button>';
       }else{
         texto = ""
       }
@@ -86,16 +86,16 @@ const PintarDB = () => {
         ${iconPublicado}
          
         </div>
-        <div class="col col-9">
+        <div class="col col-9" >
           <img src="img/${element.imagen}" width="40px" height="40px" alt="">
           <b>${element.titulo}</b> - 
           ${element.categoria}- 
           ${element.descripcion}-
         </div>
         <div class="col col-2">
-          <span class="float-right" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-            <i class="material-icons" data-toggle="tooltip" data-placement="top" title="Tooltip on top">app_registration</i>
-            <i class="material-icons">delete</i>
+          <span class="float-right" >
+            <button id=${element.titulo} class="material-icons  data-toggle="tooltip" data-placement="top" title="Editar" on top" >edit</button>
+            <button class="material-icons data-toggle="tooltip" data-placement="top" title="Borrar" on top">delete</button>
             ${texto}
           </span>
         </div>
@@ -113,17 +113,28 @@ const EliminarDB = (titulo) => {
       indexArray = index;
     }
   });
-
+  
   arrayTitulos.splice(indexArray, 1);
   GuardarDB();
 };
 
 const EditarDB = (titulo) => {
-  let indexArray = arrayTitulos.findIndex(
-    (elemento) => elemento.titulo === titulo
-  );
+  /*let indexArray = arrayTitulos.findIndex(
+    (elemento) => elemento.titulo = titulo
+    
+  );*/
 
-  arrayTitulos[indexArray].destacado = "s";
+  let indexArray;
+  arrayTitulos.forEach((elemento, index) => {
+    if (elemento.titulo === titulo) {
+      indexArray = index;
+    }
+  });
+
+   
+ 
+  /*document.formulario.titulo.value == titulo; */
+  
 
   GuardarDB();
 };
@@ -160,14 +171,17 @@ document.addEventListener("DOMContentLoaded", PintarDB);
 listaTitulosUI.addEventListener("click", (e) => {
   e.preventDefault();
 
-  if (e.target.innerHTML === "done" || e.target.innerHTML === "delete") {
+  if (e.target.innerHTML === "edit" || e.target.innerHTML === "delete") {
     let texto = e.path[2].childNodes[1].innerHTML;
+    
+       
     if (e.target.innerHTML === "delete") {
       // Accción de eliminar
       EliminarDB(texto);
     }
-    if (e.target.innerHTML === "done") {
+    if (e.target.innerHTML === "edit") {
       // Accción de editar
+      
       EditarDB(texto);
     }
   }
