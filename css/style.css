@@ -32,7 +32,8 @@
 }
 .imagen-avatar{
     background-image: url(https://p4.wallpaperbetter.com/wallpaper/970/460/972/avatar-2-2015-avatar-2-pandora-poster-wallpaper-preview.jpg);
-    width: 100%;
+    object-fit: cover;
+    width: auto;
     height: 500px;
 }
 
