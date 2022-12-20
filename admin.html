@@ -11,81 +11,67 @@
   <meta name="author" content="Yuliana Mallorga, Mariano Colombotto, Luciano Danert, Paul Teves">
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <link rel="shortcut icon" href="img/movie_logo_favicon.png" type="image/x-icon">
   <title>Filmax</title>
        <!-- Iconos de https://fontawesome.com/icons/ -->
-  <script src="https://kit.fontawesome.com/2e18571cb0.js" crossorigin="anonymous"></script>
+   <script src="https://kit.fontawesome.com/2e18571cb0.js" crossorigin="anonymous"></script>
   
 </head>
 
 <body class="backgroundIndex">
 
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top bg-black bg-opacity-25 navbar-dark bg-new">
-    <div class="container">  
-      <a class="navbar-brand logo w-50 d-flex" href="/index.html">
-        <div class="logo">
-                Filmax
-            </div> 
-        <figure class="width-logo-img">           
-          <img
-            class="img-fluid"
-            src="/img/movie_logo_favicon.png"
-            alt="Logo del blog"
-          />
-        </figure>    
-        
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#barranavegacion"
-        aria-controls="barranavegacion"
-        aria-expanded="true"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse collapse menuItems" id="barranavegacion">
-        <ul
-          class="navbar-nav navbar-nav-scroll  navbar-navegacion"
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-new">
+      <div class="container">
+        <a class="navbar-brand logo" href="/index.html"> Filmax </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#barranavegacion"
+          aria-controls="barranavegacion"
+          aria-expanded="true"
+          aria-label="Toggle navigation"
         >
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fuente" href="/pages/contacto.html"
-              >Contacto</a
-            >
-          </li>
-
-          <li class="nav-item w-50">
-            <a class="nav-link" href="/pages/nosotros.html">Acerca de</a>
-          </li>
-        </ul>
-       
-             <button type="button" class="btn btn-dark m-lg-2 m-auto">
-                  <a class="nav-link"  href="/pages/login.html"
-                >Login</a
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse menuItems" id="barranavegacion">
+          <ul class="navbar-nav ms-auto navbar-nav-scroll navbar-navegacion">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/index.html"
+                >Inicio</a
               >
-            </button>
-            <button
-              type="button"
-              class="btn btn-primary m-lg-2"
-              data-bs-toggle="modal"
-              data-bs-target="#modalRegistro"
-            >
-              Registrate
-            </button>
-       
-       
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fuente" href="/pages/contacto.html"
+                >Contacto</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/nosotros.html">Acerca de</a>
+            </li>
+          </ul>
+
+          <button type="button" class="btn btn-dark m-lg-2">
+            <a class="nav-link" href="/pages/login.html">Login</a>
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary m-lg-2"
+            data-bs-toggle="modal"
+            data-bs-target="#modalRegistro"
+          >
+            Registrate
+          </button>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
   </header>
 
   <main class="container-fluid text-light">
@@ -98,7 +84,7 @@
 
 
         <!-- Formulario -->
-        <form id="formulario">
+        <form id="formulario" name="formulario">
           <div class="form-group row">
             <label for="titulo" class="col-4 fuente">Titulo</label> 
             <div class="col-8">
@@ -131,7 +117,7 @@
           <div class="form-group row">
             <label for="text" class="col-4 col-form-label">Imagen</label> 
             <div class="col-8">
-              <input id="imagen" name="imagen" type="file" class="form-control my-2" accept="img/*,.bmp" >
+              <input id="imagen" name="imagen" type="file" class="form-control my-2" accept="jpg/*,.bmp" >
             </div>
           </div> 
           <div class="form-group row">
