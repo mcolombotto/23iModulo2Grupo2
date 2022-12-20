@@ -94,6 +94,9 @@
 .width-img-yuli{
   width: 67%;
 }
+.width-img-paul{
+  width: 70%;
+}
 .img-wrapper-equipo:hover .imagen-filter{
   filter: contrast(100%);
 }
