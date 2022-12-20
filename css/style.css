@@ -82,7 +82,7 @@ filter: contrast(102%);
 
 
 /* inicio de media query del archivo 404*/
- @media all and (min-width:618px) and (max-width: 861px) {
+ @media all and (min-width:620px) and (max-width: 861px) {
 .letter-size{
   font-size: calc(1.625rem + 2.5vw);
   font-family: 'Signika', sans-serif;
@@ -93,7 +93,7 @@ filter: contrast(102%);
 }
 }
 
- @media all and (min-width:400px) and (max-width: 618px) {
+ @media all and (min-width:400px) and (max-width: 620px) {
 .letter-size{
   font-size: calc(1rem + 1.5vw);
   font-family: 'Signika', sans-serif;
@@ -118,7 +118,7 @@ filter: contrast(102%);
 }
   .picture-error{
   object-fit: cover;
-  height: 371px;
+  height: 370px;
   width: auto;
 }
 }
