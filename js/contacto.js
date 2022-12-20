@@ -8,12 +8,9 @@ const apiKey = 'c97302966cac6b657762d6ea0c54bc06'
 const secretKey = '3ae885b76255f2259705f22d3579099c'
 
  function sendEmail(name, email, subject, message) {
-    debugger;
     const myHeaders = {
         "Content-Type": "application/json",
         'Authorization': 'Basic' + btoa(`${apiKey}:${secretKey}`),
-        'Access-Control-Allow-Origin': 'http://127.0.0.1:5500/',
-        'Access-Control-Allow-Methods': "GET, PUT, POST, DELETE, HEAD, OPTIONS"
     };
 
     const data = JSON.stringify({
