@@ -19,15 +19,6 @@ campoContraseñaLogin.addEventListener("blur", () => {
 });
 
 
-/* function busquedaUsuario(email) {
-  const newUsuario = listaUsuarios2.find((user) => user.email === email);
-  if (newUsuario !== undefined) {
-    return newUsuario;
-  } else {
-    return "";
-  }
-} */
-
 botonIniciarSesion.addEventListener("click", ingresoUsuario);
 function ingresoUsuario(e) {
   e.preventDefault();
